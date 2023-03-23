@@ -1,0 +1,531 @@
+/* ________________ iade page _____________ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jacques+Francois+Shadow&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --light-black-color: #343434;
+    --light-gray-opacity-color: #ffffff61;
+    --white-color: #ffffff;
+    --dark-green: #0e9576;
+    --black-color: #383838;
+    --gray-color: #ebebeb;
+    --gray-list-par-color:#dedede;
+    --black-list-color: #585858;
+    --gray-number-color: #f7f7f7;
+    --command-item-border-gray-color: #ededed;
+    --dark-blue: #007bff;
+}
+body{
+    font-family: Roboto, helvetice, sans-serif;
+}
+.iade_page{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+/* _____________ black area ____________________*/
+.iade_page_black_area{
+    width: 100%;
+    padding: 40px;
+    background: var(--light-black-color);
+}
+.iade_page_black_area_container{
+    width: 100%;
+    padding: 0px 15px;
+}
+/* _____ iade page black area greeting */
+.iade_page_black_area_greeting{
+    text-align: left;
+    font-size: 20px;
+    color: var(--light-gray-opacity-color);
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}
+/* _______ questions input container _________ */
+.iade_page_questions_input_container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.iade_page_question_image{
+    padding-right: 15px;
+    border-right: 1px solid var(--white-color);
+    margin-right: 10px;
+}
+.iade_page_question_image i{
+    font-size: 40px;
+    color: var(--white-color);
+}
+.iade_page_questions_input_container input{
+    width: 90%;
+    padding: 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 52px;
+    font-weight: 900;
+    color: var(--light-gray-opacity-color);
+    letter-spacing: 3px;
+    font-family: inherit;
+}
+/* _______ buttons ______________*/
+.iade_page_black_area_buttons{
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.iade_page_black_area_buttons a{
+    background: var(--white-color);
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 14px 20px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+.iade_page_black_area_buttons a:hover{
+    background: var(--dark-green);
+    color: var(--white-color);
+}
+/* __________ iade page topic question _________ */
+.iade_page_topic_question{
+    margin-top: 50px;
+    margin-bottom: 81px;
+    color: var(--white-color);
+    font-size: 24px;
+}
+/* ____ iade page questions first section */
+.iade_page_questions_first_section{
+    width: 91%;
+    margin: auto;
+    background: var(--white-color);
+    border-radius: 12px;
+    -webkit-box-shadow: 0 0 12px -8px var(--black-color);
+    box-shadow: 0 0 12px -8px var(--black-color);
+    padding: 26px;
+    position: relative;
+    top: -81px;
+}
+/* _____ first section question haeding ___________ */
+.questions_first_section_heading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.questions_first_section_heading img{
+    width: 83px;
+    height: 66px;
+    margin-bottom: 20px;
+}
+/* _____ questions first section list ___________ */
+.questions_first_section_list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.questions_first_section_list li{
+    font-size: 16px;
+    margin-bottom: 16px;
+    list-style: circle;
+    cursor: pointer;
+}
+.questions_first_section_list li:hover{
+    text-decoration: underline;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+/* _____ questions first section show all button ___________ */
+.questions_first_section_show_all_btn{
+    width: 100%;
+}
+.questions_first_section_show_all_btn a{
+    width: 100%;
+    display: block;
+    background-color: var(--white-color);
+    border: 1px solid var(--black-color);
+    border-radius: 5px;
+    text-align: center;
+    padding: 12px 35px;
+    font-size: 14px;
+    margin-top: 32px;
+}
+.questions_first_section_show_all_btn a:hover{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    transition: 0.1s;
+}
+/* ______ iade page detailed questions container _________ */
+.iade_page_detailed_questions_container{
+    width: 91%;
+    margin: auto;
+    border: 1px solid var(--gray-color);
+    border-radius: 12px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+}
+/* ________ questions left side ___________________________ */
+.iade_page_detailed_questions_left_side{
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    border-right: 1px solid var(--gray-color);
+}
+/* _____ heading _________________*/
+.questions_left_side_heading{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 31px;
+}
+/* _______ heading image ________ */
+.questions_left_side_heading img{
+    width: 25px;
+    height: 20px;
+    margin-right: 16px;
+}
+/* ______ questions left side list _____________ */
+.questions_left_side_list{
+    width: 100%;
+}
+.questions_left_side_list .questions_left_side_list_inside{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: var(--black-list-color);
+    cursor: pointer;
+}
+.questions_left_side_list_start{
+    width: 20px;
+    height: 4px;
+    background: var(--gray-list-par-color);
+    border-radius: 12px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.left_side_list_start_active{
+    background: var(--dark-green);
+    padding-right: 10px;
+}
+/* ________ questions right side ___________________________ */
+.iade_page_detailed_questions_right_side{
+    width: 76%;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 35px;
+}
+.iade_page_detailed_questions_right_side_container{
+    display: none;
+}
+.detailed_questions_right_side_show_class{
+    display: block;
+    width: 100%;
+}
+.questions_right_side_heading{
+    font-size: 20px;
+    margin-bottom: 26px;
+    font-weight: 700;
+}
+/* ___________ questions commands _________ */
+.questions_right_side_commands_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.questions_right_side_second_list_commands_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.right_side_command_item{
+    width: 22%;
+    min-height: 290px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px;
+    border: 2px dashed var(--command-item-border-gray-color);
+    border-radius: 4px;
+    text-align: center;
+    justify-content: space-between;
+}
+/* second list commands */
+.right_side_second_list_command_item{
+    width: 31%;
+    min-height: 290px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px;
+    border: 2px dashed var(--command-item-border-gray-color);
+    border-radius: 4px;
+    text-align: center;
+    justify-content: space-between;
+}
+.command_item_first_column{
+    width: 100%;
+}
+/* ________ item number _________ */
+.right_side_command_item_number{
+    width: 36px;
+    height: 36px;
+    margin: 0 auto 10px;
+    text-align: center;
+    background: var(--gray-number-color);
+    border-radius: 100%;
+    color: var(--dark-green);
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right_side_command_item_heading{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.command_item_text{
+    font-size: 14px;
+    line-height: 25px;
+}
+.command_item_text a{
+    text-decoration: underline;
+}
+.command_item_end_image_first{
+    width: 20%;
+    min-width: 100px;
+    display: block;
+    margin: 10px auto 0;
+}
+.command_item_end_image{
+    width: 30%;
+    min-width: 70px;
+    display: block;
+    margin: 10px auto 0;
+}
+.questions_right_side_list_container{
+    width: 100%;
+}
+.questions_right_side_list_container li{
+    font-size: 16px;
+    margin-bottom: 18px;
+    list-style: disc;
+}
+.questions_right_side_list_container li a, .right_side_text a{
+    color: var(--dark-blue);
+    text-decoration: underline;
+}
+/* ____ right side text ______ */
+.right_side_text{
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.iade_page_topic_question_mobile{
+    display: none;
+}
+.iade_page_mobile_buttons{
+    display: none;
+}
+.iade_page_detailed_questions_drop_down_answer{
+    display: none;
+}
+.questions_left_side_list_title_active{
+    color: var(--dark-green);
+    font-weight: 700;
+}
+/* ________________________ responsive _________________________________________*/
+@media (width <= 1023px){
+    .iade_page{
+        margin-top: 100px;
+    }
+}
+@media(width <= 991px){
+    .iade_page_detailed_questions_container{
+        flex-direction: column;
+    }
+    .iade_page_detailed_questions_left_side, .iade_page_detailed_questions_right_side{
+        width: 100%;
+    }
+    .iade_page_detailed_questions_left_side{
+        border-right: unset;
+    }
+}
+@media (width <= 768px){
+    .iade_page_black_area_buttons{
+        display: none;
+    }
+    .iade_page_black_area{
+        padding: 40px 0;
+    }
+    .iade_page_question_image i{
+        font-size: 24px;
+    }
+    .iade_page_questions_input_container{
+        margin-bottom: unset;
+    }
+    .iade_page_questions_input_container input{
+        font-size: 19px;
+    }
+    .iade_page_topic_question{
+        display: none;
+    }
+    .iade_page_topic_question_mobile{
+        width: 91%;
+        margin: auto;
+        display: block;
+        color: var(--black-color);
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 31px;
+    }
+    .iade_page_questions_first_section{
+        position: unset;
+        top: unset;
+        margin-bottom: 42px;
+    }
+    .questions_left_side_list .questions_left_side_list_inside{
+        border-bottom: 1px solid var(--gray-color);
+        padding-bottom: 9px;
+        flex-direction: column;
+    }
+    .questions_left_side_list .questions_left_side_list_inside:last-child{
+        border-bottom: unset;
+    }
+    .questions_right_side_commands_container{
+        flex-direction: column;
+    }
+    .questions_right_side_second_list_commands_container{
+        flex-direction: column;
+    }
+    .right_side_second_list_command_item{
+        width: 100%;
+        margin-bottom: 12px;
+        min-height: 245px;
+    }
+    .right_side_command_item{
+        width: 100%;
+        margin-bottom: 12px;
+        min-height: 250px;
+    }
+    .command_item_end_image{
+        width: 10%;
+        min-width: 70px;
+    }
+    .command_item_end_image_first{
+        /* width: 20%; */
+        min-width: 120px;
+    }
+    .questions_left_side_list_start{
+        margin-bottom: 5px;
+    }
+}
+@media (width <= 575px){
+    .questions_left_side_list .questions_left_side_list_inside{
+        flex-direction: row;
+        align-items: flex-start;
+        font-size: 14px;
+    }
+    .questions_left_side_list_start{        
+        background: unset;
+        width: unset;
+        height: unset;
+        border-radius: unset;
+        margin-right: 15px;
+        margin-top: unset;
+    }
+    .questions_left_side_list_start::before{
+        content: '+';
+        color: var(--black-list-color);
+        font-size: 20px;
+    }
+    .questions_left_side_list_start_clicked::before{
+        content: '-';
+        color: var(--black-list-color);
+        font-size: 20px;
+    }
+    .iade_page_detailed_questions_right_side{
+        display: none;
+    }
+    .iade_page_questions_first_section{
+        margin-bottom: 78px;
+    }
+    .iade_page_mobile_buttons{
+        width: 91%;
+        margin: auto;
+        margin-bottom: 36px;
+        display: flex;
+        flex-direction: column;
+    }
+    .iade_page_mobile_buttons a{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 12px;
+        border: 1px solid var(--black-color);
+        border-radius: 4px;
+        font-size: 14px;
+        padding: 14px;
+    }
+    .iade_page_detailed_questions_left_side{
+        padding: 24px 10px 0px;
+    }
+    .questions_left_side_list_title{
+        width: 100%;
+    }
+    .iade_page_detailed_questions_drop_down_answer{
+        width: 100%;
+        margin-top: 40px;
+        /* display: flex; */
+        flex-direction: column;
+        padding-right: 15px;
+        display: none;
+    }
+    .drop_down_answer_mobile_show{
+        display: flex;
+    }
+    .questions_right_side_mobile_list_container{
+        width: 100%;
+    }
+    .questions_right_side_mobile_list_container li{
+        font-size: 16px;
+        margin-bottom: 18px;
+        list-style: disc;
+    }
+    .questions_right_side_mobile_list_container li a, .right_side_text a, .drop_down_list_head_text a{
+        color: var(--dark-blue);
+        text-decoration: underline;
+    }
+    .command_item_end_image_mobile{
+        width: 18%;
+        min-width: 70px;
+        display: block;
+        margin: 10px auto 0;
+    }
+    .command_item_end_image_mobile_first{
+        width: 30%;
+        min-width: 120px;
+        display: block;
+        margin: 10px auto 0;
+    }
+    .drop_down_list_head_text{
+        font-size: 14px;
+        margin: 16px 0px;
+        line-height: 25px;
+    }
+}

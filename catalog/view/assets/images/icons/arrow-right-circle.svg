@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <filter id="Ellipse_6" x="0" y="0" width="64" height="64" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Slide_right" data-name="Slide right" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Ellipse_6)">
+      <circle id="Ellipse_6-2" data-name="Ellipse 6" cx="23" cy="23" r="23" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <g id="Icon_Arrow_2_Right" data-name="Icon / Arrow 2 / Right" transform="translate(19.099 12.917)">
+      <g id="Color" transform="translate(9.43) rotate(90)">
+        <path id="Stroke_3" data-name="Stroke 3" d="M0,9.43,10.019,0,20.039,9.43" fill="none" stroke="#383838" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

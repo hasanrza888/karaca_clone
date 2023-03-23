@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.304" height="15.156" viewBox="0 0 14.304 15.156">
+  <g id="Icon_Discount" data-name="Icon / Discount" transform="translate(-4.986 -4.25)">
+    <g id="Color" transform="translate(6 5)">
+      <rect id="Rectangle_858" data-name="Rectangle 858" width="12.088" height="12.057" transform="translate(0 0.336)" fill="#383838"/>
+      <rect id="Rectangle_859" data-name="Rectangle 859" width="2" height="2" transform="translate(3.362 11.393)" fill="#383838"/>
+      <rect id="Rectangle_860" data-name="Rectangle 860" width="1" height="2" transform="translate(7.748 11.393)" fill="#383838"/>
+      <path id="Stroke_1" data-name="Stroke 1" d="M0,13.393V.335A.338.338,0,0,1,.338,0h11.6a.338.338,0,0,1,.338.335V13.393" transform="translate(0)" fill="none" stroke="#383838" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Stroke_3" data-name="Stroke 3" d="M12.276,1.08,10.239,0a.02.02,0,0,0-.016,0L8.193,1.076a.02.02,0,0,1-.016,0L6.147,0a.02.02,0,0,0-.016,0L4.1,1.076a.02.02,0,0,1-.016,0L2.054,0a.02.02,0,0,0-.016,0L0,1.08" transform="translate(0 12.313)" fill="none" stroke="#383838" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Fill_5" data-name="Fill 5" d="M1.466.726a.729.729,0,0,1-.733.725A.729.729,0,0,1,0,.726.729.729,0,0,1,.733,0a.729.729,0,0,1,.733.726" transform="translate(7.335 7.88)" fill="#fff"/>
+      <path id="Stroke_7" data-name="Stroke 7" d="M4.408,0,0,4.361" transform="translate(3.934 4.516)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="0.8"/>
+      <path id="Fill_9" data-name="Fill 9" d="M0,.725A.729.729,0,0,1,.733,0a.729.729,0,0,1,.733.725.729.729,0,0,1-.733.725A.729.729,0,0,1,0,.725" transform="translate(3.475 4.062)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

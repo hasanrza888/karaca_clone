@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="surface1" transform="translate(1.969)">
+    <circle id="Ellipse_155" data-name="Ellipse 155" cx="8" cy="8" r="8" transform="translate(-1.969)" fill="#fff"/>
+    <g id="Icon_Heart_Fill" data-name="Icon / Heart Fill" transform="translate(-2.662 -0.606)">
+      <g id="Color" transform="translate(5 6)">
+        <path id="Stroke_1" data-name="Stroke 1" d="M6.836,3.262l-.485.5-2.657,2.7-2.657-2.7-.488-.5a1.941,1.941,0,0,1,0-2.7,1.86,1.86,0,0,1,2.657,0l.488.5.488-.5a1.858,1.858,0,0,1,2.655,0A1.936,1.936,0,0,1,6.836,3.262Z" transform="translate(0 0)" fill="#e02020" stroke="#e02020" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

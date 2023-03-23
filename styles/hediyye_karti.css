@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jacques+Francois+Shadow&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --green-color: #34cb19;
+    --light-green-color: #effff4;
+    --dark-gray-color: #d3d3d3;
+    --light-gray-color: #E9ECEF;
+    --black-color: #383838;
+    --white-color: #fff;
+    --light-yellow-color: #fbf8e3;
+    --brown-color: #8b703e;
+    --gray-color: rgba(0,0,0,.1);
+    --middle-gray-color :#dee2e6;
+    --input-gray-color: #ddd;
+    --opacity-black: #383838b6;
+}
+body{
+    font-family: Roboto, helvetice, sans-serif;
+}
+/* ___________ hediyye karti page ____________________ */
+.hediyye_karti_page{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+.hediyye_karti_page_container{
+    width: 98%;
+    margin: auto;
+}
+/* _________ hediyye karti page first section ________ */
+.hediyye_karti_page_first_section{
+    width: 92%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 43px;
+    margin-bottom: 16px;
+    justify-content: space-between;
+}
+/* _______ first section item _____________*/
+.hediyye_karti_page_first_section_item{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.hediyye_karti_page_first_section_item_active_color{
+    fill: var(--green-color);
+    filter: var(--green-color);
+}
+.hediyye_karti_page_first_section_item_active_arrow{
+    stroke: var(--green-color);
+}
+/* _______ first section item image and text container _____________*/
+.hediyye_karti_page_first_section_item_image_and_text{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    min-width: 93px;
+}
+/* _______ first section item image _____________*/
+.hediyye_karti_page_first_section_item_image{
+    width: 32px;
+    height: 32px;
+    margin: auto;
+    margin-top: 20px;
+}
+.hediyye_karti_page_first_section_item_image svg{
+    width: 100%;
+    height: 100%;
+}
+/* _______ first section item text _____________*/
+.hediyye_karti_page_first_section_item_text{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 13px;
+}
+.hediyye_karti_page_first_section_arrow{
+    width: 32px;
+    height: 32px;
+}
+.hediyye_karti_page_first_section_arrow svg{
+    width: 100%;
+    height: 100%;
+}
+/* _________ hediyye karti page second section _____________ */
+.hediyye_karti_page_second_section{
+    width: 100%;
+    margin-top: 60px;
+}
+.hediyye_karti_page_second_section_head{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+.hediyye_karti_page_second_section_head_name{
+    font-size: 40px;
+    font-weight: 500;
+}
+.hediyye_karti_page_second_section_head_text{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.small_paragraph{
+    font-size: 14.4px;
+    margin-top: 10px;
+}
+/* _______ hediyye karti page second section first button _______________________*/
+.hediyye_karti_page_second_section_first_button{
+    width: 80%;
+    max-width: 251px;
+    min-width: 166px;
+    margin: 20px auto;
+    padding: 6px 12px;
+    background: var(--light-green-color) 0 0 no-repeat padding-box;
+    border: 1px solid var(--green-color);
+    border-radius: 6px;
+    opacity: 1;
+    text-align: center;
+    line-height: 1.5;
+}
+/* ___________ hediyye karti page second section product container _________________ */
+.hediyye_karti_page_second_section_product_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* ______ image __________*/
+.hediyye_karti_page_second_section_product_image{
+    width: 50%;
+    max-width: 635px;
+    padding: 0 15px;
+}
+.hediyye_karti_page_second_section_product_image img{
+    width: 100%;
+}
+/* ______ hediyye karti page second section product price choosing _____________ */
+.hediyye_karti_page_second_section_product_price_choosing{
+    width: 49%;
+    /* padding: 0px 15px; */
+}
+.hediyye_karti_page_second_section_product_price_choosing_head_name{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.hediyye_karti_page_second_section_product_price_choosing p{
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+/* _____________ product price choosing values container _____________________ */
+.product_price_choosing_values_container{
+    width: 80%;
+    /* min-width: 265px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product_price_choosing_values, .change_amount{
+    border: 1px solid var(--dark-gray-color);
+    border-radius: 6px;
+    width: 32%;
+    /* min-width: 131px; */
+    font-size: 16px;
+    margin: 8px 0px;
+    padding: 11px 0px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.price_active_btn{
+    background: var(--light-green-color) 0 0 no-repeat padding-box;
+    border: 1px solid var(--green-color);
+}
+/* ________ product price choosing values input _________________*/
+.product_price_choosing_values_input{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid var(--dark-gray-color);
+    border-radius: 0.25rem;
+    justify-content: space-between;
+    overflow: hidden;
+    display: none;
+}
+.product_price_choosing_values_input input{
+    width: 90%;
+    font-size: 16px;
+    padding: 6px 12px;
+    outline: none;
+    border: none;
+}
+.product_price_choosing_values_input .currency{
+    font-size: 16px;
+    background-color: var(--light-gray-color);
+    padding: 6px 12px;
+    line-height: 1.5;
+}
+/* ___________________ hiding arrow from number input ______________________ */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+/* input[type=number] {
+  -moz-appearance: textfield;
+} */
+/* _____ hediyye karti page second section product number choosing */
+.hediyye_karti_page_second_section_product_number_choosing{
+    width: 40%;
+    margin-top: 25px;
+    margin-left: 22%;
+    margin-bottom: 20px;
+    display: none;
+}
+.product_number_choosing_head{
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+.product_number_choosing_input_container{
+    width: 100%;
+    /* height: 64px; */
+    display: flex;
+    flex-direction: row;
+    border: 1px solid var(--dark-gray-color);
+    border-radius: 6px;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 10px;
+}
+.product_number_choosing_input_container:hover{
+    border: 1px solid var(--black-color);
+}
+.product_number_choosing_input_container button{
+    font-size: 25px;
+    text-align: center;
+    width: 44.8px ;
+    height: 44.8px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: var(--dark-gray-color);
+    font-weight: 100;
+    cursor: pointer;
+}
+.product_number_choosing_input_container button:active{
+    border-radius: 30px;
+    border: 1px solid black;
+}
+.product_number_choosing_input_container input{
+    width:60%;
+    height: 64px;
+    margin: auto;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+}
+/* ___ hediyye karti page second section product sending confirm ______ */
+.hediyye_karti_page_second_section_product_sending_confirm{
+    width: 80%;
+    margin-top: 20px;
+    background: var(--black-color);
+    border: 1px solid var(--black-color);
+    border-radius: 5px;
+    color: var(--white-color);
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 30px;
+}
+.hediyye_karti_not_allowed{
+    cursor: not-allowed;
+}
+.number_of_choosed_cart{
+    font-size: 11.2px;
+    margin-top: 10px;
+}
+/* ____ hediyye karti page second section product information warning _____ */
+.hediyye_karti_page_second_section_product_information_warning{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    align-items: center;
+    margin-top: 30px;
+    background-color: var(--light-yellow-color);
+    border-radius: 6px;
+}
+.hediyye_karti_page_second_section_product_information_warning_text{
+    font-size: 14px;
+    padding-left: 10px;
+    color: var(--brown-color);
+}
+/* ___________ hediyye karti page third section ___________ */
+.hediyye_karti_page_third_section{
+    width: 98%;
+    margin: 40px auto;
+}
+/* _________ questions _______________*/
+.hediyye_karti_page_questions_container{
+    width: 100%;
+}
+.hediyye_karti_page_questions_title{
+    font-size: 14px;
+    text-align: left;
+}
+.hediyye_karti_page_questions_content{
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: 13px;
+    line-height: 1.5;
+}
+/* ______ hediyye karti page rules container ___________________ */
+.hediyye_karti_page_rules_container{
+    width: 100%;
+}
+.hediyye_karti_page_rules_container_name{
+    font-size: 14px;
+    text-align: left;
+}
+.hediyye_karti_page_rules{
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    height: 200px;
+    overflow-y: auto;
+}
+.hediyye_karti_page_rules_title{
+    font-size: 15px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.hediyye_karti_page_rules_content{
+    font-size: 15px;
+    line-height: 1.5;
+}
+.hediyye_karti_page_rules_content p{
+    margin-bottom: 16px;
+}
+.text_indent{
+    text-indent: 25px;
+}
+/* _________ hediyye karti page rules list container _________ */
+.hediyye_karti_page_rules_list_container{
+    width: 100%;
+    padding-left: 40px;
+}
+.hediyye_karti_page_rules_list_container li{
+    text-indent: 10px;
+    margin-bottom: 16px;
+}
+.hediyye_karti_page_rules ol, .hediyye_karti_page_rules li{
+    list-style: decimal;
+}
+/* _______ sub list ____________*/
+.hediyye_karti_page_rules_sub_list{
+    width: 100%;
+    padding-left: 40px;
+}
+.hediyye_karti_page_rules_sub_list li{
+    text-indent: 15px;
+    margin-bottom: 16px;
+}
+/* ____ divider ___________ */
+.hediyye_karti_page_rules_content_divider{
+    width: 33%;
+    border-top: 1px solid var(--gray-color);
+    margin-top: 80px;
+    margin-bottom: 16px;
+}
+.divider_paragraph{
+    font-size: 13px;
+}
+/* _______ hediyye uye ol window _______________ */
+@keyframes uye_ol{
+    from{opacity: 0.8;};
+    to{opacity: 1;}
+}
+.hediyye_karti_uye_ol_window{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    background-color: var(--opacity-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.hediyye_karti_display_flex{
+    display: flex;
+    animation: 0.5s uye_ol;
+}
+/* _______ hediyye uye ol container _______________ */
+.hediyye_karti_uye_ol_container{
+    width: 80%;
+    max-width: 298px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-color);
+    position: absolute;
+    z-index: 1001;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* uye ol heade */
+.hediyye_karti_uye_ol_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid var(--middle-gray-color);
+}
+/* ___________  header name _____________________ */
+.hediyye_karti_uye_ol_header_name{
+    font-size: 24px;
+    text-align: left;
+    font-weight: 500;
+}
+/* ___________ uye ol window close button ________*/
+.hediye_karti_uye_ol_close_btn{
+    font-size: 25px;
+    cursor: pointer;
+}
+/* uye ol form */
+.hediyye_karti_uye_ol_container form{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+/* labels */
+.uye_ol_email_label, .uye_ol_password_label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    padding: 0px 5px;
+    font-size: 14px;
+}
+/* inputs */
+.uye_ol_email_label input, .uye_ol_password_label input{
+    margin-top: 3px;
+    padding: 10px;
+    border: 1px solid var(--input-gray-color);
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+}
+/* password container */
+.hediyye_karti_password_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid var(--input-gray-color);
+    border-radius: 5px;
+    margin-top: 3px;
+}
+.hediyye_karti_password_container input{
+    width: 85%;
+    border: none;
+    outline: none;
+    padding: unset;
+    margin-top: unset;
+}
+/* password show hide buttons */
+.hediyye_karti_password_open, .hediyye_karti_password_close{
+    cursor: pointer;
+}
+.password_none{
+    display: none !important;
+}
+.uye_ol_check_box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 22px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px;
+}
+.uye_ol_check_box input[type = checkbox]{
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    accent-color: var(--white-color);
+    /* border-radius: 3px; */
+    /* outline: none; */
+}
+.hediyye_karti_giris_yap{
+    width: 45%;
+    min-width: 117px;
+    background: var(--black-color);
+    border: 1px solid var(--black-color);
+    border-radius: 5px;
+    color: var(--white-color);
+    font-size: 16px;
+    padding: 10px 0px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 5px;
+}
+/* _____________________ Responsive ____________________________________ */
+@media (width <= 1023px){
+    .product_price_choosing_values, .change_amount{
+        width: 49%;
+    }
+    .hediyye_karti_page_second_section_product_number_choosing{
+        width: 80%;
+        margin-left: unset;
+    }
+}
+@media (width <= 992px){
+    .hediyye_karti_page_first_section_arrow{
+        display: none;
+    }
+    /* .product_price_choosing_values_container{
+        max-width: 363px;
+    } */
+    /* .product_price_choosing_values{
+        width: 49%;
+        max-width: 181px;
+    } */
+}
+@media (width <= 768px){
+    .hediyye_karti_page_second_section_product_container{
+        flex-direction: column;
+    }
+    .hediyye_karti_page_second_section_product_image{
+        width: 98%;
+    }
+    .hediyye_karti_page_second_section_product_price_choosing{
+        width: 95%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .product_price_choosing_values_container{
+        width: 100%;
+    }
+    /* .product_price_choosing_values{
+        width: 47%;
+    } */
+    .product_price_choosing_values_input{
+        width: 100%;
+    }
+    .hediyye_karti_page_second_section_product_number_choosing{
+        width: 100%;
+    }
+    .hediyye_karti_page_second_section_product_sending_confirm{
+        width: 100%;
+    }
+    .hediyye_karti_page_second_section_product_information_warning{
+        width: 100%;
+    }
+    .hediyye_karti_page_third_section{
+        width: 90%;
+    }
+}
+@media (width <= 575px){
+    .hediyye_karti_uye_ol_container{
+        width: 95%;
+        max-width: 557px;
+    }
+    .hediyye_karti_uye_ol_header_name{
+        font-size: 20px;
+    }
+}

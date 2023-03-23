@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="Group_24_Copy_2" data-name="Group 24 Copy 2" transform="translate(0)">
+    <circle id="Oval" cx="20" cy="20" r="20" transform="translate(0)" fill="rgba(56,56,56,0.7)"/>
+    <path id="Path" d="M16.49,16.49a.618.618,0,0,1-.437.177.6.6,0,0,1-.418-.177l-7.3-7.3-7.3,7.3a.6.6,0,0,1-.855-.855l7.3-7.3-7.3-7.3A.67.67,0,0,1,0,.613.631.631,0,0,1,.613,0a.67.67,0,0,1,.428.186l7.3,7.3,7.3-7.3a.6.6,0,0,1,.855.855l-7.3,7.3,7.3,7.3a.6.6,0,0,1,.177.418A.618.618,0,0,1,16.49,16.49Z" transform="translate(11.667 11.667)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.667"/>
+  </g>
+</svg>

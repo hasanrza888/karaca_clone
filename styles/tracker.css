@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jacques+Francois+Shadow&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --account-list-item-border-gray-color: #ececec;
+    --right-arrow-gray-color: #bababa;  
+    --account-icons-color: #7e7e7e;
+    --input-border-color: #ddd;
+    --text-color: #383838;
+    --disabled-input-color: #e9ecef;
+    --confirm-phone-btn-border: #707070;
+    --radio-bg-color: #e6e6e6;
+    --radio-checked-bg-color: #fff; 
+    --dark-black: #000000;
+    --mobile-head-border-color: #f2f2f2;
+    --account-information-bg-color: #fafafa;
+    --checkbox-color: #c6c6c6;
+    --true-password-color: #05b71d;
+}
+body{
+    font-family: Roboto, helvetice, sans-serif;
+    color: var(--text-color);
+}
+/* __________ tracker page ______________*/
+.tracker_page{
+    width: 98%;
+    max-width: 1440px;
+    margin: auto;
+    margin-bottom: 52px;
+    display: flex;
+    flex-direction: row;
+}
+/* _______ account container ___________ */
+.tracker_page_account_container{
+    width: 30%;
+    min-width: 203px;
+    max-width: 310px;
+    display: flex;
+    flex-direction: column;
+}
+.tracker_page_account_head_text{
+    width: 100%;
+    font-size: 15px;
+    text-align: left;
+    margin: 10px 0px;
+}
+/* ____________ account list ______________________ */
+.tracker_page_account_list_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.tracker_page_account_list_container li{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 10px 16px 0px;
+    border-bottom: 1px solid var(--account-list-item-border-gray-color);
+    cursor: pointer;
+}
+.tracker_page_account_list_container li:last-child{
+    border: none;
+}
+/* ________ active list _____________ */
+.tracker_page_account_list_active{
+    font-weight: 600;
+}
+/* list name container */
+.account_list_name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+}
+/* icon */
+.account_list_name i{
+    margin-right: 10px;
+    font-size: 22px;
+    width: 26px;
+    color: var(--account-icons-color);
+}
+/* list img logo */
+.account_list_name img{
+    width: 25px;
+    margin-right: 11px;
+}
+/* arrow right */
+.list_arrow_right{
+    font-size: 20px;
+    color: var(--right-arrow-gray-color);
+}
+/* __________ account detail window ____ */
+.tracker_page_account_list_detail{
+    width: 70%;
+    padding-left: 30px;
+}
+.tracker_page_account_info_window{
+    width: 100%;
+    /* display: flex; */
+    flex-direction: column;
+    display: none;
+    position: relative;
+}
+.tracker_page_account_info_window_flex{
+    display: flex;
+}
+/* window name */
+.account_info_window_name{
+    font-size: 24px;
+    margin: 20px 0px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* _______ add new delivery address ___________ */
+.tracker_page_add_new_delivery_addres{
+    width: 50%;
+    max-width: 268px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: var(--radio-checked-bg-color);
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tracker_page_add_new_delivery_addres:hover{
+    background-color: var(--text-color);
+    color: var(--radio-checked-bg-color);
+}
+.tracker_page_add_new_delivery_addres:hover i{
+    border: 1px solid var(--right-arrow-gray-color);
+}
+/* _______ add new delivery address add icon ___________ */
+.tracker_page_add_new_delivery_addres i{
+    font-size: 14px;
+    margin-right: 10px;
+    color: var(--right-arrow-gray-color);
+    border: 1px solid var(--text-color);
+    width: 18px;
+    height: 18px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tracker_page_add_new_delivery_addres_text{
+    font-size: 16px;
+}
+.tracker_page_add_new_delivery_addres_mobile{
+    display: none;
+}
+/* account info form */
+.account_info_form_container{
+    width: 100%;
+}
+.account_info_form{
+    width: 100%;
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+}
+/* ______ two item row __________ */
+.account_info_form_two_item_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.account_info_form_two_item{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+    margin-bottom: 16px;
+}
+/* ________ label ______________ */
+.account_info_form_two_item label{
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+/* ________ input ______________ */
+.account_info_form_two_item input, .account_info_form_two_item select{
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--input-border-color);
+    font-size: 15px;
+}
+.confirm_phone_container{
+    position: relative;
+}
+/* ______ phone confirm btn _________ */
+.confirm_phone_btn{
+    width: 56px;
+    border: 1px solid var(--confirm-phone-btn-border);
+    border-radius: 6px;
+    cursor: pointer;
+    display: block;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 3px 0;
+    position: absolute;
+    right: 35px;
+    text-align: center;
+    top: 26px;
+}
+/* ________ form email __________*/
+.account_info_form_email{
+    margin-bottom: 16px;
+    padding-right: 30px;
+}
+.account_info_form_email label{
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+.account_info_form_email input, .account_info_form_email textarea{
+    width: 100%;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+    padding: 10px;
+}
+.account_info_form_email textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 46px;
+    min-height: 46px;
+}
+/* _____ disabled email _______________________ */
+.disable_email_bg_color{
+    background-color: var(--disabled-input-color);
+}
+/* ________ notifications _____________________ */
+.account_info_form_notifications_head{
+    font-size: 24px;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 16px 0px 20px;
+}
+.account_info_form_notification{
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+/* _______ radios container _________________*/
+.account_info_form_notification_radios_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.form_notification_radios_inside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 15px;
+    position: relative;
+}
+.form_notification_radios_inside label{
+    font-size: 14px;
+    margin-left: 15px;
+}
+.form_notification_radios_inside input[type='radio']:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    top: -5px;
+    left: -1px;
+    position: relative;
+    background-color: var(--radio-bg-color);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    /* border: 1px solid var(--radio-checked-bg-color); */
+    cursor: pointer;
+}
+.form_notification_radios_inside input[type='radio']:checked:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    top: -5px;
+    left: -1px;
+    position: relative;
+    background-color: var(--text-color);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    /* border: 1px solid var(--text-color); */
+}
+/* _________ notification condition ______________ */
+.form_notification_condition_head{
+    width: 100%;
+    font-size: 14px;
+}
+.form_notification_condition_list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    padding-left: 15px;
+}
+.form_notification_condition_list li{
+    width: 100%;
+    list-style: disc;
+    padding: 0px 0px 5px 0px;
+    font-size: 14px;
+}
+/* ____________ form buttons ____________ */
+.account_info_form_buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.center_btn{
+    margin: auto;
+}
+.account_form_button{
+    font-size: 14px;
+    background-color: var(--radio-checked-bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.big_btn{
+    padding: 10px 48px;
+}
+.button_black_bg{
+    background-color: var(--text-color);
+    color: var(--radio-checked-bg-color);
+}
+.account_form_button:hover{
+    background-color: var(--dark-black);
+    color: var(--radio-checked-bg-color);
+}
+.account_info_window_mobile_name{
+    display: none;
+}
+/* _________ account information container ______ */
+.tracker_page_account_informations_container{
+    width: 100%;
+    max-width: 330px;
+    padding: 15px 20px;
+    background-color: var(--account-information-bg-color);
+    border: 1px solid var(--account-list-item-border-gray-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    display: none;
+}
+.tracker_page_account_informations_container_flex{
+    display: flex;
+}
+/* _____ account information list details _______ */
+.tracker_page_account_informations_container ul{
+    display: flex;
+    flex-direction: column;
+}
+.tracker_page_account_informations_container ul li{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 17px;
+}
+/* _________ account update btn ______________ */
+.account_informations_update_btn{
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+}
+.account_informations_update_btn i{
+    margin-left: 5px;
+    font-size: 15px;
+    color: var(--account-icons-color);
+}
+/* __________ orders window ______________________ */
+/* search and filter container */
+.tracker_page_orders_product_search_filter{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+/* _____ order search __________ */
+.orders_product_search_container{
+    width: 183px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 5px;
+    background-color: var(--account-information-bg-color);
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 14px;
+}
+.orders_product_search_container img{
+    width: 15px;
+    height: 15px;
+}
+.orders_product_search_container input{
+    width: 95%;
+    outline: none;
+    border: none;
+    padding: 9px;
+    font-size: 14px;
+    background: transparent;
+}
+/* ___________ product filter _____________ */
+.order_product_filter{
+    padding: 8px 40px 8px 10px;
+    background: var(--radio-checked-bg-color);
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 14px;
+    outline: none;
+}
+/* _________ no order information _________ */
+.tracker_page_no_order{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.tracker_page_no_order img{
+    width: 100px;
+}
+.tracker_page_no_order_text{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+/* _________ tracker page change password window _____________ */
+/* _______ change password form ____________ */
+.tracker_page_change_password_form{
+    width: 40%;
+    max-width: 306px;
+    display: flex;
+    flex-direction: column;
+}
+/* ________ passowrd input container_________________ */
+.log_in_form_logIn_password_container{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--input-border-color);
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+/* password input */
+.log_in_form_logIn_password_container input{
+    width: 90%;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+/* password type changer */
+.log_in_form_logInPassword_open, .log_in_form_logInPassword_close{
+    cursor: pointer;
+}
+.password_none{
+    display: none !important;
+}
+/* ___________  password length, uppercase, lowercase checker ____________ */
+.log_in_form_password_checker_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+.log_in_form_password_checker{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.log_in_form_password_warning{
+    width: 15px;
+    height: 15px;
+    border-radius: 30px;
+    border: 1px solid var(--checkbox-color);
+    margin-right: 10px;
+}
+.true_password_color{
+    background-color: var(--true-password-color);
+}
+/* _______ change password change form submit _________ */
+.change_password_form_submit{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--text-color);
+    color: var(--radio-checked-bg-color);
+    text-align: center;
+    padding: 10px 30px;
+    font-size: 14px;
+}
+.not_allowed_cursor{
+    cursor: not-allowed;
+}
+.change_password_form_submit:hover{
+    background-color: var(--dark-black);
+}
+/* __________ loading container ____________ */
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.loading_container{
+    border: 10px solid transparent;
+    border-radius: 50%;
+    border-top: 10px solid var(--text-color);
+    border-right: 10px solid var(--text-color);
+    border-bottom: 10px solid var(--text-color);
+    width: 70px;
+    height: 70px;
+    margin: 20px auto;
+    -webkit-animation: spin 1s linear infinite; /* Safari */
+    animation: spin 1s linear infinite;
+}
+/* _______  new address window _________ */
+.new_address_form_window{
+    width: 100%;
+    display: none;
+}
+/* ______________ responsive _______________ */
+@media (width <= 1023px){
+    .tracker_page{
+        margin-top: 45px;
+    }
+}
+@media (width <= 991px){
+    .account_info_form{
+        max-width: unset;
+    }
+    .account_info_form_two_item_container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .account_info_form_two_item{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .account_info_form_email{
+        padding-right: 0;
+    }
+    .confirm_phone_btn{
+        right: 10px;
+    }
+    .tracker_page_change_password_form{
+        width: 80%;
+        max-width: unset;
+    }
+    .tracker_page_add_new_delivery_addres{
+        width: 60%;
+    }
+}
+@media (width <= 767px){
+    .tracker_page{
+        width: 95%;
+        flex-direction: column-reverse;
+    }
+    .tracker_page_account_container{
+        width: 100%;
+        max-width: unset;
+        margin-top: 36px;
+    }
+    .tracker_page_account_list_detail{
+        width: 100%;
+        padding-left: 0px;
+    }
+    .tracker_page_account_informations_container{
+        max-width: unset;
+    }
+    .tracker_page_change_password_form{
+        width: 100%;
+    }
+}
+@media (width <= 575px){
+    .account_info_window_name{
+        display: none;
+    }
+    .account_info_window_mobile_name{
+        display: block;
+        width: 100%;
+        padding: 10px 8px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-top: 1px solid var(--mobile-head-border-color);
+        border-bottom: 1px solid var(--mobile-head-border-color);
+        margin: 10px 0px 20px;
+    }
+    .account_info_window_mobile_name img{
+        width: 12px;
+        margin-right: 30%;
+        cursor: pointer;
+    }
+    .tracker_page_add_new_delivery_addres_mobile{
+        display: block;
+    }
+    .tracker_page_add_new_delivery_addres_mobile{
+        width: 50%;
+        min-width: 230px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        background-color: var(--radio-checked-bg-color);
+        border: 1px solid var(--text-color);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .tracker_page_add_new_delivery_addres_mobile:hover{
+        background-color: var(--text-color);
+        color: var(--radio-checked-bg-color);
+    }
+    .tracker_page_add_new_delivery_addres_mobile:hover i{
+        border: 1px solid var(--right-arrow-gray-color);
+    }
+    /* _______ add new delivery address add icon ___________ */
+    .tracker_page_add_new_delivery_addres_mobile i{
+        font-size: 14px;
+        margin-right: 10px;
+        color: var(--right-arrow-gray-color);
+        border: 1px solid var(--text-color);
+        width: 18px;
+        height: 18px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .tracker_page_add_new_delivery_addres_mobile_text{
+        font-size: 16px;
+    }
+}
+@media (width <= 380px){
+    .tracker_page_orders_product_search_filter{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .orders_product_search_container{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+@media(width <= 324px){
+    .account_info_form_buttons{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .account_form_button{
+        margin-bottom: 10px;
+    }
+}

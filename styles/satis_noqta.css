@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jacques+Francois+Shadow&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --input-border-color: #aaa;
+    --text-black-color: #383838;
+    --scroll-bar-thumb-color: #a9a9a9;
+    --scroll-bar-hover: #464646;
+    --scroll-bar-bg-color: #e9e9e9;
+    --list-item-border-color: #ddd;
+    --list-hover-color: #e6e6e6;
+    --address-color: #888;
+    --contact-block-bg-color: #fafafa;
+}
+body{
+    font-family: Roboto, helvetica, sans-serif;
+}
+/* _________ satis noqta page ___________  */
+.satis_noqta_page{
+    width: 98%;
+    margin: 15px auto;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+}
+.satis_noqta_page_search_selling_center, .satis_noqta_page_selling_center_contact_container{
+    width: 50%;
+    padding: 0 15px;
+}
+/* page head */
+.satis_noqta_page_search_head{
+    width: 100%;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 8px;
+}
+/* search input text */
+.satis_noqta_page_search_with_store_name_ipnut{
+    width: 100%;
+    padding: 8px 15px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 6px;
+    font-size: 18px;
+    outline: none;
+    margin: 16px 15px 16px 0px;
+    color: var(--text-black-color);
+}
+.satis_noqta_page_cities_list{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 6px;
+    outline: none;
+    color: var(--text-black-color);
+    font-size: 18px;
+}
+.satis_noqta_page_stores_container{
+    width: 100%;
+    margin: 25px 0;
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+/* __________ scroll of selling center window ________________ */
+.satis_noqta_page_stores_container::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+    background-color: var(--scroll-bar-bg-color);
+    border-radius: 5px;
+}
+.satis_noqta_page_stores_container::-webkit-scrollbar-track{
+    border-radius: 5px;
+}
+.satis_noqta_page_stores_container::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: var(--scroll-bar-thumb-color);
+}
+.satis_noqta_page_stores_container::-webkit-scrollbar-thumb:hover {
+    background: var(--scroll-bar-hover); 
+}
+/* __________ list item ____________ */
+.satis_noqta_page_store_list_item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--list-item-border-color);
+    margin-right: 10px;
+    margin-top: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.satis_noqta_page_store_list_item:hover{
+    background-color: var(--list-hover-color);
+    border-radius: 6px;
+}
+/* item name */
+.satis_noqta_page_store_name{
+    width: 100%;
+    color: var(--text-black-color);
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.satis_noqta_page_store_address{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.satis_noqta_page_store_address span{
+    color: var(--address-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+.satis_noqta_page_store_address i{
+    display: block;
+    margin-left: 10px;
+}
+/* ______ satis noqta page selling center contact container */
+.satis_noqta_page_selling_center_contact_detail{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--contact-block-bg-color);
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px 0 var(--list-item-border-color);
+    margin-top: 10px;
+    padding: 45px 20px 30px;
+    display: none;
+}
+.selling_center_contact_detail_show{
+    display: flex;
+}
+.satis_noqta_page_store_location, .satis_noqta_page_store_phone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+}
+.satis_noqta_page_store_location i, .satis_noqta_page_store_phone i{
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    font-size: 25px;
+    background-color: #f1f1f1;
+    border-radius: 30px;
+    margin-right: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+/* ________ responsive ___________ */
+@media(width <= 1023px){
+    .satis_noqta_page{
+        margin-top: 45px;
+    }
+}
+@media(width <= 768px){
+    .satis_noqta_page{
+        flex-direction: column;
+    }
+    .satis_noqta_page_search_selling_center{
+        width: 100%;
+    }
+    .satis_noqta_page_selling_center_contact_container{
+        width: 100%;
+    }
+}
+@media(width <= 575px){
+    .satis_noqta_page_store_name{
+        font-size: 16px;
+    }
+    .satis_noqta_page_store_address span{
+        font-size: 14px;
+    }
+}

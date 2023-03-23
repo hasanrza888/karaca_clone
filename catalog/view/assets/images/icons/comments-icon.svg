@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56.429" height="56.505" viewBox="0 0 56.429 56.505">
+  <g id="Icon_FAQ" data-name="Icon / FAQ" transform="translate(1.5 1.5)">
+    <g id="Color">
+      <path id="Stroke_1" data-name="Stroke 1" d="M23.573,0A23.481,23.481,0,0,0,6.84,40.046a.628.628,0,0,1,.048.7c-.917,1.1-2.78,3.424-3.968,4.908C2.286,46.443,2.6,47,3.407,47H23.573a23.5,23.5,0,1,0,0-47Z" fill="none" stroke="#383838" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+      <path id="Stroke_3" data-name="Stroke 3" d="M27.364,0a19.337,19.337,0,0,1,.972,28.212.518.518,0,0,0-.039.575c.756.907,2.293,2.824,3.273,4.048.523.653.262,1.109-.4,1.109H14.535A19.421,19.421,0,0,1,0,27.435" transform="translate(19.451 19.561)" fill="none" stroke="#383838" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+      <path id="Stroke_5" data-name="Stroke 5" d="M20.018,0A11.35,11.35,0,0,1,10.009,5.979,11.35,11.35,0,0,1,0,0" transform="translate(13.564 28.829)" fill="none" stroke="#383838" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

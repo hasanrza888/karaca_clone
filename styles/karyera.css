@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jacques+Francois+Shadow&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --box-gray-color: rgb(223, 223, 223);
+    --black-color: #000000;
+}
+/* karyera page */
+.karyera_page{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+/* karyera page continer */
+.karyera_page_container{
+    width: 85%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+/* _______ job item _________ */
+.karyera_page_job_item{
+    width: 32%;
+    background-color: var(--box-gray-color);
+    text-align: center;
+    margin-right: 1%;
+    margin-bottom: 10px;
+}
+.karyera_page_job_item a{
+    display: block;
+    width: 100%;
+    min-height: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.karyera_page_job_item a:hover{
+    border: 2px solid var(--black-color);
+}
+.karyera_page_job_item a h2{
+    width: 100%;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.karyera_page_job_item a p{
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+/* _________ responsive ________________ */
+@media (width <= 1023px){
+    .karyera_page{
+        margin-top: 45px;
+    }
+    .karyera_page_job_item a{
+        min-height: 200px;
+    }
+}
+@media (width <= 768px){
+    .karyera_page_job_item a{
+        min-height: 170px;
+    }
+    .karyera_page_job_item a h2{
+        font-size: 20px;
+    }
+}
+@media (width <= 575px){
+    .karyera_page_container{
+        width: 75%;
+        flex-direction: column;
+    }
+    .karyera_page_job_item{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .karyera_page_job_item a{
+        min-height: 200px;
+    }
+}

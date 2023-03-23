@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jacques+Francois+Shadow&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --black-color: #383838;
+    --bg-light-color: #B3DCF5;
+    --white-color: #fff;
+    --second-section-bg-gray-color: #FAFAFA;
+    --table-border-gray-color: #F7F7F7;
+    --table-circle-gray-color: #F2F2F2;
+    --table-circle-light-green-color: #05B71D;
+    --mobile-table-border-color: #F0F0F0;
+    --mobile-table-green-color: #00B463;
+    --second-section-description-border-gray: #ededed;
+    --second-section-description-text-blue-color: #35939f;
+    --second-section-description-bg-light-green-color: #F4FEFF;
+}
+/* __________ teslimat page ___________ */
+.teslimat_page{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+/* _______ first section _______________ */
+.teslimat_page_first_section{
+    width: 100%;
+    padding: 50px;
+    background-color: var(--bg-light-color);
+    display: flex;
+    flex-direction: row;
+}
+.teslimat_page_first_section_left_side, .teslimat_page_first_section_right_side{
+    width: 50%;
+    padding: 0px 15px;
+}
+/* __________ first section left side __________ */
+.teslimat_page_first_section_left_side{
+    display: flex;
+    flex-direction: column;   
+}
+/* __________ first section left side head text __________ */
+.teslimat_page_first_section_left_side_head{
+    width: 100%;
+    font-size: 40px;
+    color: var(--black-color);
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+/* __________ first section left side slogan text __________ */
+.teslimat_page_first_section_left_side_slogan{
+    font-size: 20px;
+    color: var(--black-color);
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+}
+/* ___________ left side dates _________________________________*/
+.teslimat_page_first_section_left_side_date{
+    width: 100%;
+    margin-top: 80px;
+    padding: 20px;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-color);
+}
+.left_side_date{
+    /* width: 50%; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+}
+.left_side_date img{
+    width: 29%;
+    margin-right: 10px;
+}
+.left_side_second_img{
+    max-width: 34.45px;
+}
+.left_side_date_text{
+    font-size: 12px;
+}
+.teslimat_page_first_section_right_side img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+/* ____________________ second section container ___________________ */
+.teslimat_page_second_section{
+    width: 100%;
+    background-color: var(--second-section-bg-gray-color);
+    padding: 30px 0px;
+    margin-bottom: 20px;
+}
+/* ____________ table _____________*/
+.teslimat_page_second_section_table_container{
+    width: 98%;
+    margin: auto;
+}
+.teslimat_page_second_section_table{
+    width: 100%;
+    background-color: var(--white-color);
+    border-radius: 6px;
+    border-collapse: collapse;
+}
+.teslimat_page_second_section_table tr{
+    border-bottom: 1px solid var(--table-border-gray-color);
+}
+.teslimat_page_second_section_table thead th{
+    padding: 12px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+.teslimat_page_second_section_table tbody th{
+    font-weight: 400;
+    text-align: left;
+}
+.teslimat_page_second_section_table thead th span{
+    background-color: var(--second-section-bg-gray-color);
+    padding: 3px 5px;
+    border-radius: 30px;
+}
+.teslimat_page_second_section_table tbody th, .teslimat_page_second_section_table tbody td{
+    padding: 16px;
+    font-size: 16px;
+}
+.teslimat_page_second_section_table tbody td{
+    text-align: center;
+}
+.teslimat_table_circle{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    border-radius: 100%;
+    background-color: var(--table-circle-gray-color);
+}
+.teslimat_table_success{
+    background-color: var(--table-circle-light-green-color);
+}
+.teslimat_page_second_section_mobile_table_container{
+    display: none;
+}
+.teslimat_page_second_section_description{
+    width: 98%;
+    margin: 20px auto 0px;
+    display: flex;
+    flex-direction: column;
+}
+.teslimat_page_second_section_description_active{
+    width: 100%;
+    font-size: 16px;
+    color: var(--second-section-description-text-blue-color);
+    background: var(--second-section-description-bg-light-green-color);
+    border: 1px solid var(--second-section-description-border-gray);
+    padding: 22px 25px;
+    border-radius: 6px;
+    margin-bottom: 2px;
+}
+.teslimat_page_second_section_description_colorless{
+    width: 100%;
+    padding: 8px 15px;
+    margin-bottom: 16px;
+}
+@media (width <= 1023px){
+    .teslimat_page{
+        margin-top: 45px;
+    }
+}
+@media (width <= 767px){
+    .teslimat_page_first_section{
+        padding: 50px 0px;    
+    }
+    .teslimat_page_first_section_left_side_date{
+        margin-top: 20px;
+        padding: 10px;
+    }
+    .left_side_date_text{
+        font-size: 10px;
+    }
+    /* ____________ mobile city delivery dates table _______________*/
+    .teslimat_page_second_section_table_container{
+        display: none;
+    }
+    .teslimat_page_second_section_mobile_table_container{
+        display: block;
+        width: 98%;
+        margin: auto;
+    }
+    .second_section_table_mobile{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .table_mobile_item{
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .table_mobile_item_title{
+        font-size: 16px;
+        color: var(--black-color);
+    }
+    .table_mobile_item_inner{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: var(--white-color);
+        border: 1px solid var(--mobile-table-border-color);
+        border-radius: 6px;
+        margin-top: 10px;
+        padding: 20px;
+    }
+    .table_mobile_item_inner span{
+        color: var(--white-color);
+        background: var(--mobile-table-green-color);
+        border-radius: 30px;
+        padding: 3px 10px;
+        display: inline-block;
+        margin-right: 8px;
+        margin-bottom: 10px;
+    }
+}
+@media (width <= 991px){
+    .teslimat_page_first_section{
+        flex-direction: column;
+    }
+    .teslimat_page_first_section_left_side{
+        margin-bottom: 20px;
+    }
+    .teslimat_page_first_section_left_side, .teslimat_page_first_section_right_side{
+        width: 100%;
+    }
+}
+@media (width <= 575px){
+    .teslimat_page_second_section_mobile_table_container{
+        width: 95%;
+    }
+    .teslimat_page_second_section_description{
+        width: 95%;
+    }
+}

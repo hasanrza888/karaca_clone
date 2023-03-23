@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="24" height="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="pencil" clip-path="url(#clip-path)">
+    <g id="pencil-2" data-name="pencil" transform="translate(0 -0.036)">
+      <path id="Path_10330" data-name="Path 10330" d="M17.5,24A6.5,6.5,0,1,1,24,17.5,6.508,6.508,0,0,1,17.5,24Zm0-11.5a5,5,0,1,0,5,5A5.006,5.006,0,0,0,17.5,12.5Z" transform="translate(0 0.037)" fill="#d0024d"/>
+      <path id="Path_10331" data-name="Path 10331" d="M17.5,21a.75.75,0,0,1-.75-.75v-5.5a.75.75,0,0,1,1.5,0v5.5A.75.75,0,0,1,17.5,21Z" transform="translate(0 0.037)" fill="#d0024d"/>
+      <path id="Path_10332" data-name="Path 10332" d="M20.25,18.25h-5.5a.75.75,0,0,1,0-1.5h5.5a.75.75,0,0,1,0,1.5Z" transform="translate(0 0.027)" fill="#d0024d"/>
+      <path id="Path_10333" data-name="Path 10333" d="M19.871,9.011a.744.744,0,0,1-.53-.22L15.206,4.657A.75.75,0,0,1,16.267,3.6L20.4,7.73a.751.751,0,0,1-.531,1.281Z" fill="#d0024d"/>
+      <path id="Path_10334" data-name="Path 10334" d="M.75,24.037a.752.752,0,0,1-.7-1.008l2.38-6.57a.741.741,0,0,1,.175-.274L17.68,1.092a3.769,3.769,0,0,1,5.233,0,3.694,3.694,0,0,1-.007,5.241l-3.135,3.14A.751.751,0,0,1,18.71,8.412l3.14-3.145a2.191,2.191,0,0,0,0-3.115,2.232,2.232,0,0,0-3.107,0L3.778,17.129,2,22.032l4.9-1.779,1.5-1.505a.751.751,0,0,1,1.061,1.063L7.84,21.433a.743.743,0,0,1-.274.175l-6.56,2.384a.758.758,0,0,1-.256.045Z" transform="translate(0 0)" fill="#d0024d"/>
+      <path id="Path_10335" data-name="Path 10335" d="M7.308,21.62a.744.744,0,0,1-.53-.22L2.6,17.223a.75.75,0,1,1,1.061-1.061L7.839,20.34a.75.75,0,0,1-.531,1.28Z" transform="translate(0 0.037)" fill="#d0024d"/>
+    </g>
+  </g>
+</svg>

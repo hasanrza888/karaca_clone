@@ -1,0 +1,824 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jacques+Francois+Shadow&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --sebet-page-header-white-color: #fff;
+    --page-header-active-green-color: #05b71d;
+    --page-main-bg-color: #fafafa;
+    --product-border-color: #f1f1f1;
+    --text-black-color: #383838;
+    --button-black-color: #000000;
+    --button-shadow-gray-color: rgb(0 0 0 / 15%);
+    --opacity-black: #383838b6;
+    --confirm-window-border-bottom: #dee2e6;
+    --icon-bg-orange-color: #f7b500;
+}
+body{
+    font-family: Roboto, helvetica, sans-serif;
+}
+/* ________ sebet page header ______________ */
+.sebet_page_header{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    background-color: var(--sebet-page-header-white-color);
+}
+.sebet_page_header_container{
+    width: 98%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 0;
+}
+/* _________ header logo ___________________ */
+.sebet_page_header_logo{
+    display: block;
+    width: 30%;
+}
+/* _________ header processes container ___________________ */
+.sebet_page_header_processes{
+    width: 48%;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sebet_page_header_processes_item{
+    width: 28%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.sebet_page_header_processes_item a img{
+    width: 40%;
+    display: block;
+    margin: auto;
+    filter: opacity(0.4) drop-shadow(0 0 var(--page-header-active-green-color));
+}
+.sebet_page_header_processes_item_image_name{
+    display: flex;
+    flex-direction: column;
+}
+.sebet_page_header_processes_item_image_name i{
+    font-size: 28px;
+    margin: auto;
+}
+.sebet_page_header_processes_item_name{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.header_active_green_color{
+    color: var(--page-header-active-green-color);
+}
+/* _________ header right links ______________ */
+.sebet_page_header_right_links{
+    width: 18%;
+    min-width: 213px;
+    display: flex;
+    flex-direction: row;
+}
+.sebet_page_header_right_link_item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 48%;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.sebet_page_header_right_link_item a{
+    display: block;
+    width: 100%;
+}
+.sebet_page_header_right_link_item i{
+    font-size: 22px;
+    margin-right: 10%;
+}
+/* ___________ account drop down _____________ */
+.sebet_page_header_right_link_account{
+    position: relative;
+}
+.sebet_header_dropdown_menu{
+    width: 220px;
+    position: absolute;
+    top: 10px;
+    right: 9px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+.sebet_header_dropdown_menu_container{
+    width: 100%;
+    background-color: var(--sebet-page-header-white-color);
+    border: 1px solid var(--product-border-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: -13px; 
+}
+.sebet_header_dropdown_menu i{
+    display: block;
+    font-size: 30px;
+    margin: auto;
+    position: relative;
+    right: -140px;
+    color: var(--confirm-window-border-bottom);
+}
+.sebet_page_header_right_link_account:hover .sebet_header_dropdown_menu{
+    display: block;
+}
+.sebet_header_dropdown_menu ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+.sebet_header_dropdown_menu ul li a{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 14px;
+}
+.sebet_header_dropdown_menu ul li a img{
+    width: 15px;
+    margin-right: 10px;
+}
+/* __________ sebet page main container _____________________ */
+.sebet_page_main_container{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    padding: 30px 0px;
+    background-color: var(--page-main-bg-color);
+}
+/* __________ product and price container __________ */
+.sebet_page_product_and_price_container{
+    width: 98%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.sebet_page_products_container{
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--sebet-page-header-white-color);
+    margin-right: 15px;
+}
+/* _____ product table header _______*/
+.sebet_page_products_header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--product-border-color);
+}
+/* card text and product number */
+.sebet_page_product_cart_and_amount{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+}
+.sebet_page_product_cart{
+    margin-right: 5px;
+}
+/* ______ delete all cart _________*/
+.sebet_page_products_header_remove_All_cart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+.sebet_page_products_header_remove_All_cart i{
+    margin-right: 5px;
+    font-size: 17px;
+}
+/* product container */
+.sebet_page_product{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-bottom: 1px solid var(--product-border-color);
+}
+/* ___________ product image ________________ */
+.sebet_page_product_image{
+    width: 14%;
+    margin-right: 2%;
+}
+.sebet_page_product_image a{    
+    display: block;
+    width: 100%;
+}
+.sebet_page_product_image img{
+    width: 100%;
+}
+.sebet_page_product_image .sebet_page_product_delete_from_cart{
+    display: none;
+}
+/* _________ product details __________ */
+.sebet_page_product_details{
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+}
+.sebet_page_product_name{
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    color: var(--text-black-color); 
+    font-weight: 500;
+}
+.sebet_page_product_number_id{
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.sebet_page_product_free_shipping{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    color: var(--page-header-active-green-color);
+}
+.sebet_page_product_free_shipping img{
+    width: 7%;
+    margin-right: 5px;
+    filter: opacity(0.4) drop-shadow(0 0 var(--page-header-active-green-color));
+}
+/* ________ right side of product _________ */
+.sebet_page_product_right_side{
+    width: 44%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ________ product number change ___________ */
+.sebet_page_product_number_change{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sebet_page_product_number_change i{
+    font-size: 20px;
+}
+.sebet_page_product_number_decrease, .sebet_page_product_number_increase{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: var(--text-black-color);
+    color: var(--sebet-page-header-white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+/* ________ product number ___________ */
+.sebet_page_product_number_show{
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    padding: 0px 2px;
+    font-size: 22px;
+}
+/* __________ price of product ___________ */
+.sebet_page_product_price{
+    font-size: 18px;
+    font-weight: 500;
+}
+.sebet_page_product_delete_from_cart{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+.sebet_page_product_delete_from_cart i{
+    font-size: 18px;
+    margin-right: 5px;
+}
+/* ______ continue to shop button _____________ */
+.sebet_page_continue_to_shop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    border-bottom: 1px solid var(--product-border-color);
+    border-radius: 0 0 6px 6px;
+}
+.sebet_page_continue_to_shop i{
+    margin-right: 5px;
+}
+/* ___________ payment cards slider  _______________ */
+.sebet_page_product_payment_slider{
+    width: 100%;
+    margin: auto;
+    margin-top: 26px;
+}
+.sebet_page_product_payment{
+    margin-right: 10px;
+    /* overflow: hidden; */
+}
+/* .sebet_page_product_payment:last-child{
+    margin-right: 0px;
+} */
+.sebet_page_product_payment img{
+    width: 100%;
+}
+/* ___________ payment container __________________ */
+.sebet_page_payment_container{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--sebet-page-header-white-color);
+    border: 1px solid var(--product-border-color);
+}
+.sebet_page_payment_head{
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 18px;
+    color: var(--text-black-color);
+    border-bottom: 1px solid var(--product-border-color);
+}
+/* payment info types */
+.sebet_page_payment_info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--product-border-color);
+}
+.sebet_page_payment_prices_container{
+    width: 100%;
+    padding: 30px 20px;
+    font-size: 14px;
+}
+/* ______ sebet page payment price container */
+.sebet_page_payment_price{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-black-color);
+    margin-bottom: 10px;
+}
+.discount_color{
+    color: var(--page-header-active-green-color);
+}
+.line_text{
+    text-decoration: line-through;
+}
+/* _________ total price __________ */
+.sebet_page_payment_prices_total{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 16px;
+}
+/* payment continue button */
+.sebet_page_payment_continue_btn{
+    width: 100%;
+    padding: 10px 20px 40px;
+    font-size: 16px;
+}
+.sebet_page_payment_continue_btn button{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding: 10px 30px;
+    background-color: var(--page-header-active-green-color);
+    color: var(--sebet-page-header-white-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+/* ________  cart warning _____________ */
+.sebet_page_payment_warning{
+    width: 100%;
+    text-align: center;
+    padding: 0px 22px;
+    margin: 10px auto;
+    font-size: 12.8px;
+}
+/* ____________ payment coupon ____________ */
+.sebet_page_payment_coupon_container{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--product-border-color);
+    padding: 20px 10px;
+}
+.sebet_page_payment_coupon_head{
+    font-size: 16px;
+    padding: 0 15px;
+    margin-bottom: 8px;
+}
+.sebet_page_payment_coupon_input_btn_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 15px;
+}
+.sebet_page_payment_coupon_input_btn_container input{
+    padding: 10px;
+    width: 75%;
+    border: 1px solid var(--product-border-color);
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+}
+/* ________ coupon button ________*/
+.sebet_page_payment_coupon_btn{
+    width: 25%;
+    max-width: 101px;
+    text-align: center;
+    font-size: 14px;
+    background-color: var(--text-black-color);
+    color: var(--sebet-page-header-white-color);
+    margin-left: 3%;
+    padding: 10px 0px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.sebet_page_payment_coupon_btn:hover{
+    background-color: var(--button-black-color);
+}
+/* ____________ footer ______________ */
+.sebet_page_footer{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    background-color: var(--page-main-bg-color);
+}
+/* __________ footer copyright _______ */
+.sebet_page_footer_copyright{
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 12px;
+}
+/* ___________ footer bank logos ________ */
+.sebet_page_footer_banks{
+    width: 100%;
+    background-color: var(--text-black-color);
+    padding: 10px;
+}
+.sebet_page_footer_banks img{
+    max-width: 614px;
+    display: block;
+    margin: auto;
+}
+.sebet_page_header_mobile_links{
+    display: none;
+}
+.sebet_page_product_price_mobile{
+    display: none;
+}
+.sebet_page_payment_mobile_prices{
+    display: none;
+}
+.sebet_page_payment_mobile_coupon_open{
+    display: none;
+}
+/* ________ sebet page confirm removing All cart window ___________ */
+@keyframes confirm_delete{
+    from{opacity: 0.8;};
+    to{opacity: 1;}
+}
+.sebet_page_confirm_removing_All_cart_window{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    background-color: var(--opacity-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.confirm_removing_All_cart_window_display{
+    display: flex;
+    animation: 0.5s confirm_delete;
+}
+.sebet_page_confirm_removing_All_cart_container{
+    width: 80%;
+    max-width: 498px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--sebet-page-header-white-color);
+    position: absolute;
+    z-index: 1001;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* _________ window header _________________*/
+.sebet_page_confirm_removing_All_cart_header{
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dee2e6;
+}
+.sebet_page_confirm_removing_All_cart_header_name{
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.confirm_removing_All_cart_header_close_btn{
+    font-size: 25px;
+    cursor: pointer;
+}
+.sebet_page_confirm_removing_All_cart_body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    align-items: center;
+}
+.sebet_page_confirm_removing_All_cart_icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: var(--icon-bg-orange-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.sebet_page_confirm_removing_All_cart_icon i{
+    font-size: 20px;
+    color: var(--sebet-page-header-white-color);
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--sebet-page-header-white-color);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sebet_page_confirm_removing_All_cart_text{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.sebet_page_confirm_removing_All_cart_buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.sebet_page_removing_All_cart_cancel_btn, .sebet_page_removing_All_cart_confirm_btn{
+    width: 48%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid var(--text-black-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sebet_page_removing_All_cart_cancel_btn, .sebet_page_confirm_coupon_log_in{
+    background-color: var(--text-black-color);
+    color: var(--sebet-page-header-white-color);
+}
+.sebet_page_confirm_coupon_close{
+    background-color: var(--sebet-page-header-white-color);
+    color: var(--text-black-color);
+}
+.sebet_page_removing_All_cart_cancel_btn:hover, .sebet_page_removing_All_cart_confirm_btn:hover{
+    background-color: var(--button-black-color);
+    color: var(--sebet-page-header-white-color);
+}
+/* _________ Responsive ____________ */
+@media (width <= 1023px){
+    .sebet_page_product_right_side{
+        width: 20%;
+        flex-direction: column;
+    }
+    .sebet_page_product_details{
+        width: 66%;
+    }
+    .sebet_page_product_number_decrease, .sebet_page_product_number_increase{
+        width: 26px;
+        height: 26px;
+    }
+    .sebet_page_product_number_change i{
+        font-size: 15px;
+    }
+}
+@media (width <= 991px){
+    .sebet_page_product_and_price_container{
+        flex-direction: column;
+    }
+    .sebet_page_products_container{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .sebet_page_payment_container{
+        width: 100%;
+    }
+    .sebet_page_payment_continue_btn button{
+        max-width: 200px;
+    }
+}
+@media (width <= 768px){
+    .sebet_page_header_logo, .sebet_page_header_right_links{
+        display: none;
+    }
+    .sebet_page_header_container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+    .sebet_page_header_processes{
+        width: 100%;
+        /* max-width: 550px; */
+        max-width: unset;
+        justify-content: center;
+        margin: auto;
+    }
+    .sebet_page_header_processes_item{
+        width: 30%;
+        padding: 0px 5% 0px 7%;
+    }
+    .sebet_page_footer{
+        display: none;
+    }
+    .sebet_page_main_container{
+        padding: 0px;
+        background-color: unset;
+        margin-bottom: 70px;
+    }
+    .sebet_page_header_mobile_links{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .sebet_page_header_mobile_links i{
+        font-size: 22px;
+    }
+    .sebet_page_header_mobile_name{
+        font-size: 16px;
+    }
+    .sebet_page_header_mobile_links_right{
+        display: flex;
+        flex-direction: row;
+    }
+    .sebet_page_header_mobile_links_right a{
+        margin-right: 10px;
+    }
+    .sebet_page_product_cart_and_amount{
+        font-size: 16px;
+    }
+    .sebet_page_products_header_remove_All_cart {
+        font-size: 13px;
+    }
+    .sebet_page_product{
+        padding: 10px;
+    }
+    .sebet_page_product_right_side{
+        align-items: flex-end;
+    }
+    .sebet_page_product_number_change{
+        flex-direction: column-reverse;
+        margin-bottom: 20px;
+    }
+    .sebet_page_product_price{
+        display: none;
+    }
+    .sebet_page_product_number_id{
+        display: none;
+    }
+    .sebet_page_product_name{
+        margin-bottom: 5px;
+    }
+    .sebet_page_product_price_mobile{
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .sebet_page_product_image{
+        min-width: 70px;
+    }
+    .sebet_page_product_free_shipping img{
+        min-width: 20px;
+    }
+    .sebet_page_product_name{
+        font-size: 13px;
+    }
+    .sebet_page_payment_continue_btn{
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        padding: 15px;
+        background-color: var(--sebet-page-header-white-color);
+        box-shadow: 0 -0.5rem 1rem var(--button-shadow-gray-color);
+    }
+    .sebet_page_payment_continue_btn button{
+        width: 95%;
+        max-width: unset;
+    }
+}
+@media (width <= 575px){
+    .sebet_page_product_image .sebet_page_product_delete_from_cart{
+        display: block;
+        margin-top: 24px;
+    }
+    .sebet_page_product_right_side .sebet_page_product_delete_from_cart{
+        display: none;
+    }
+    .sebet_page_product_image{
+        margin-right: 3%;
+    }
+    .sebet_page_payment_continue_btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-shadow: none;
+        border-top: 1px solid var(--product-border-color);
+    }
+    .sebet_page_payment_continue_btn button{
+        width: 50%;
+        max-width: 162px;
+        margin: unset;
+    }
+    .sebet_page_payment_mobile_prices{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .sebet_page_payment_mobile_prices i{
+        margin-right: 10px;
+    }
+    .sebet_page_payment_mobile_price_name{
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        text-align: center;
+    }
+    .sebet_page_payment_mobile_price_number{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .sebet_page_payment_container{
+        border: none;
+    }
+    .sebet_page_payment_head, .sebet_page_payment_info, .sebet_page_payment_warning, .sebet_page_payment_coupon_container{
+        display: none;
+    }
+    .sebet_page_payment_display_flex{
+        display: flex;
+        width: 100%;
+        position: fixed;
+        bottom: 67px;
+        z-index: 999;
+        background-color: var(--sebet-page-header-white-color);
+        font-weight: 700;
+        border-top: 1px solid var(--product-border-color);
+    }
+    .sebet_page_payment_mobile_coupon_open{
+        display: block;
+        text-align: end;
+        color: #fa6400;
+        font-size: 14px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}

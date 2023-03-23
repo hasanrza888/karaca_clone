@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="surface1" transform="translate(1.969)">
+    <circle id="Ellipse_155" data-name="Ellipse 155" cx="8" cy="8" r="8" transform="translate(-1.969)" fill="#f7b529"/>
+    <g id="Color" transform="translate(2.404 4.554)">
+      <path id="Stroke_1" data-name="Stroke 1" d="M3.6.019a.036.036,0,0,1,.063,0L4.952,1.895a.184.184,0,0,0,.085.062l2.187.649a.036.036,0,0,1,.02.06L5.857,4.474a.184.184,0,0,0-.033.1l.058,2.277a.036.036,0,0,1-.051.037L3.68,6.13a.184.184,0,0,0-.105,0l-2.151.758a.036.036,0,0,1-.051-.037L1.43,4.574a.184.184,0,0,0-.033-.1L.01,2.666a.036.036,0,0,1,.019-.06l2.187-.649A.185.185,0,0,0,2.3,1.895Z" transform="translate(0)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

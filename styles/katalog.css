@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jacques+Francois+Shadow&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --white-color: #fff;
+    --box-shadow-gray-color: rgb(0 0 0 / 8%);
+    --black-color: #000000;
+    --opacity-black: #383838b6;
+    --book-header-border-gray-color: #dee2e6;
+}
+/* _________ katalog page ____________________ */
+.katalog_page{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    padding-top: 20px;
+}
+.katalog_page_container{
+    width: 98%;
+    margin: auto;
+}
+/* _______________ page name _______________ */
+.katalog_page_name{
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 25px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+/* ____________ boxes container _____________ */
+.katalog_page_boxes_container{
+    width: 100%;
+    margin: auto;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.brand_Wrap{
+    display: block;
+    width: 31%;
+    margin: 0 2% 30px 0;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    border: 2px solid var(--white-color);
+    box-shadow: 1px 1px 5px var(--box-shadow-gray-color);
+}
+.brand_Wrap:hover{
+    border: 2px solid var(--black-color);
+    transition: 1s;
+}
+.brand_Content{
+    width: 100%;
+    height: 39vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand_Content img{
+    width: 100%;
+}
+.brand_Name{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+/* _____________ catalogue book window ________________________ */
+@keyframes uye_ol{
+    from{opacity: 0.8;};
+    to{opacity: 1;}
+}
+.catalogue_book_window{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    background-color: var(--opacity-black);
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* padding: 50px 0px; */
+    display: none;
+}
+.catalogue_book_window_display{
+    display: flex;
+    animation: 0.5s uye_ol;
+}
+.catalogue_book_view_container{
+    width: 98%;
+    max-width: 1138px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-color);
+    /* position: absolute; */
+    /* z-index: 1001; */
+    /* left: 0;
+    right: 0; */
+    margin: auto;
+    border-radius: 10px;
+    /* top: 50%;
+    transform: translateY(-50%); */
+}
+.catalogue_book_view_header{
+    width: 100%;
+    padding: 16px;
+    border-bottom: 1px solid var(--book-header-border-gray-color);
+}
+.catalogue_book_view_close_btn{
+    font-size: 20px;
+    float: right;
+    cursor: pointer;
+}
+.catalogue_book_view_body{
+    width: 100%;
+    padding: 16px;
+}
+.catalogue_book{
+    width: 100%;
+    height: 28vw;
+    max-height: 517px;
+}
+@media (width <= 1199px){
+    .catalogue_book_view_container{
+        max-width: 798px;
+    }
+    .catalogue_book{
+        height: 30vw;
+    }
+}
+@media (width <= 1023px){
+    .katalog_page{
+        margin-top: 45px;
+    }
+}
+@media (width <= 991px){
+    .catalogue_book_view_container{
+        max-width: 498px;
+    }
+    .catalogue_book{
+        height: 35vw;
+    }
+}
+@media (width <= 767px){
+
+    .brand_Wrap{
+        width: 45%;
+        padding: 5px;
+        padding-bottom: 10px;
+        margin-right: 3%;
+    }
+    .brand_Content{
+        height: 68vw;
+    }
+    .catalogue_book{
+        height: 350px;
+    }
+}
+@media (width <= 450px){
+    .brand_Wrap{
+        width: 100%;
+    }
+    .brand_Content{
+        height: unset;
+    }
+}

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jacques+Francois+Shadow&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --white-color: #fff;
+    --light-black-color: #383838;
+}
+/* _______________________ hediyye page _________________________________ */
+.hediyye_page{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    margin-bottom: 52px;
+}
+/* _________ images container __________________ */
+.hediyye_page_hediyye_images{
+    width: 100%;
+    margin-bottom: 52px;
+}
+/* first row image */
+.hediyye_page_hediyye_images_first_row{
+    width: 100%;
+    padding: 0px 15px;
+    margin-bottom: 24px;
+}
+.hediyye_page_hediyye_images_first_row a{
+    width: 100%;
+}
+.hediyye_page_hediyye_images_first_row a img{
+    width: 100%;
+}
+/* second row image */
+.hediyye_page_hediyye_images_second_row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.hediyye_page_hediyye_images_second_row a{
+    padding: 0px 15px;
+    margin-bottom: 24px;
+}
+.hediyye_page_hediyye_images_second_row a img{
+    width: 100%;
+}
+/* ________ third row images __________ */
+.hediyye_page_hediyye_images_third_row{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.hediyye_page_hediyye_images_third_row a{
+    padding: 0px 15px;
+    margin-bottom: 24px;
+}
+.hediyye_page_hediyye_images_third_row a img{
+    width: 100%;
+}
+/* ____ fourth row image __________ */
+.hediyye_page_hediyye_images_fourth_row{
+    width: 100%;
+    padding: 0px 15px;
+    margin-bottom: 24px;
+}
+.hediyye_page_hediyye_images_fourth_row a{
+    width: 100%;
+}
+.hediyye_page_hediyye_images_fourth_row a img{
+    width: 100%;
+}
+/* __________ hediyye page hediyye descriptions container _______________ */
+.hediyye_page_hediyye_descriptions_container{
+    width: 100%;
+    margin: auto;
+    padding: 0px 15px;
+}
+.hediyye_page_hediyye_description_open, .hediyye_page_hediyye_description_close{
+    width: 100%;
+    font-size: 16px;
+    font-family: Roboto, helvetica, sans-serif;
+}
+.hediyye_page_hediyye_description_open p, .hediyye_page_hediyye_description_close p{
+    margin-bottom: 15px;
+    line-height: 22px;
+}
+.hediyye_page_hediyye_description_close{
+    display: none;
+}
+/* show and close buttons */
+.hediyye_page_hediyye_description_open_button, .hediyye_page_hediyye_description_close_button{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    background: transparent;
+    font-size: 14px;
+    font-family: Roboto, helvetica, sans-serif;
+    background-color: var(--white-color);
+    border: 1px solid var(--light-black-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hediyye_page_hediyye_description_open_button:hover, .hediyye_page_hediyye_description_close_button:hover{
+    background-color: var(--light-black-color);
+    color: var(--white-color);
+}
+.hediyye_page_hediyye_description_close_button{
+    display: none;
+}
+.hediyye_display_block{
+    display: block;
+}
+/* _______________ responsive design ________________ */
+@media (max-width: 1023px) {
+    .hediyye_page{
+        margin-top: 45px;
+    }
+}
+@media (max-width: 767px) {
+    .hediyye_page_hediyye_images_second_row, .hediyye_page_hediyye_images_third_row{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34.103" height="20.467" viewBox="0 0 34.103 20.467">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#383838;stroke-linecap:round;stroke-miterlimit:10}.cls-2{fill:#383838}
+        </style>
+    </defs>
+    <g id="Group_84" transform="translate(-624.303 -237)">
+        <g id="Component_3_2" transform="translate(630.775 237.5)">
+            <g id="Icon_Pin_Rotate">
+                <g id="Color">
+                    <path id="Stroke_1" d="M3.094 0h2.84a1.821 1.821 0 0 1 0 3.643H2.509a2.528 2.528 0 0 0 0 5.057h4.206" class="cls-1" transform="translate(0 8.349)"/>
+                    <path id="Stroke_5" d="M7.159 3.608c0 3.667-3.58 5.9-3.58 5.9S0 7.275 0 3.608a3.58 3.58 0 1 1 7.159 0z" class="cls-1" transform="translate(9.901 5.51)"/>
+                    <path id="Stroke_9" d="M4.821 2.43a4.739 4.739 0 0 1-2.41 3.777A4.739 4.739 0 0 1 0 2.43a2.411 2.411 0 1 1 4.821 0z" class="cls-1" transform="translate(.683)"/>
+                    <path id="Stroke_3" d="M2.824 1.423A1.412 1.412 0 1 1 1.412 0a1.418 1.418 0 0 1 1.412 1.423z" class="cls-2" transform="translate(11.982 7.807)"/>
+                    <path id="Stroke_7" d="M2.118 1.067A1.059 1.059 0 1 1 1.059 0a1.063 1.063 0 0 1 1.059 1.067z" class="cls-2" transform="translate(2.098 1.403)"/>
+                </g>
+            </g>
+            <g id="Icon_Shipping" transform="translate(6.809 7.365)">
+                <g id="Color-2">
+                    <path id="Stroke_1-2" d="M0 .048h7.206" class="cls-1" transform="translate(4.782 9.657)"/>
+                    <path id="Stroke_6" d="M4.782 2.411A2.391 2.391 0 1 1 2.392 0a2.4 2.4 0 0 1 2.39 2.411z" class="cls-1" transform="translate(0 7.279)"/>
+                    <path id="Stroke_8" d="M4.782 2.411A2.391 2.391 0 1 1 2.391 0a2.4 2.4 0 0 1 2.391 2.411z" class="cls-1" transform="translate(13.584 7.282)"/>
+                    <path id="Stroke_10" d="M1.6 9.692H0V0h2.338" class="cls-1" transform="translate(11.988)"/>
+                    <path id="Stroke_12" d="M1.955 0v3.151a.5.5 0 0 1-.492.5H0" class="cls-1" transform="translate(18.366 6.046)"/>
+                    <path id="Stroke_14" d="M5.995 6.045A6.02 6.02 0 0 0 0 0" class="cls-1" transform="translate(14.326 .001)"/>
+                    <path id="Stroke_16" d="M0 0h6.6a1.567 1.567 0 0 1 1.73 1.448" class="cls-1" transform="translate(11.989 5.448)"/>
+                </g>
+            </g>
+        </g>
+        <path id="Stroke_7-2" d="M0 0h1.556" class="cls-1" transform="rotate(180 314.666 124.422)"/>
+        <path id="Stroke_7_Copy" d="M0 .014L3.112 0" class="cls-1" transform="rotate(180 314.666 122.824)"/>
+        <path id="Stroke_7_Copy_2" d="M0 .014L4.527 0" class="cls-1" transform="rotate(180 314.666 121.224)"/>
+    </g>
+</svg>

@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jacques+Francois+Shadow&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --log-in-head-text-color: #495057;
+    --border-color: #f1f1f1;
+    --light-black-color: #383838;
+    --input-border-color: #ddd;
+    --dark-red: rgb(222, 1, 1);
+    --head-bg-color: #f6f6f6;
+    --dark-black-hover-color: #000000;
+    --white-color: #fff;
+    --checkbox-color: #c6c6c6;
+    --socials-container-border-color: #e5e5e5;
+    --social-item-border-color: #ccc;
+    --true-password-color: #05b71d;
+    --forgot-window-header-border: #dee2e6;
+    --forgot-window-submit-bg-color: #f0f0f0;
+    --link-blue-color: #0000FF;
+}
+/* ___________ log in page ____________ */
+body{
+    font-family: Roboto, helvetice, sans-serif;
+}
+.log_in_page{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    padding: 40px 0;
+}
+.log_in_page_container{
+    width: 80%;
+    max-width: 398px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+/* _________ login box header ______________ */
+.log_in_page_box_header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid var(--border-color);
+}
+.log_in_page_logIn_box, .log_in_page_sign_up_box{
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    color: var(--log-in-head-text-color);
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--head-bg-color);
+}
+.log_in_page_logIn_box{
+    border-right: 1px solid var(--border-color);
+}
+.btn_active_class{
+    background-color: var(--white-color);
+}
+/* ______ login box body container _________*/
+.log_in_page_box_body{
+    width: 100%;
+    padding: 20px;
+    /* display: none; */
+}
+/* _______ login box ___________ */
+.log_in_page_box_body_logIn{
+    display: none;
+}
+.log_in_page_box_body_logIn_show{
+    width: 100%;
+    display: block;
+}
+/* ____________ log in form ______________ */
+.log_in_form, .sign_up_form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+/* label */
+.log_in_form label, .sign_up_form label{
+    margin-bottom: 3px;
+    font-size: 14px;
+    color: var(--light-black-color);
+}
+.log_in_form label span, .sign_up_form label span{
+    color: var(--dark-red);
+    margin-left: 2px;
+}
+/* ipnut */
+.log_in_page_logIn_email, .log_in_form_logIn_password_container{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--input-border-color);
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    color: var(--light-black-color);
+}
+.log_in_form_logIn_password_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+/* password input */
+.log_in_form_logIn_password_container input{
+    width: 90%;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+.log_in_form_logInPassword_open, .log_in_form_logInPassword_close{
+    cursor: pointer;
+}
+.password_none{
+    display: none !important;
+}
+.log_in_form_third_line{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+/* checkbox */
+.log_in_form_third_line_remember_me{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.remember_me_checkbox[type = checkbox]{
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    accent-color: var(--white-color);
+    cursor: pointer;
+}
+.log_in_form_third_line_remember_me label{
+    margin: 0;
+}
+/* ________ forgot password __________ */
+.log_in_form_third_line_forgotten_password{
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* submit button */
+.log_in_form_submit_btn{
+    width: 100%;
+}
+.log_in_form_submit_btn button{
+    width: 100%;
+    background: var(--light-black-color);
+    border: 1px solid var(--light-black-color);
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 30px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+.log_in_form_submit_btn button:hover{
+    background-color: var(--dark-black-hover-color);
+}
+/* ____________ socials ________________ */
+.log_in_form_logIn_with_socials{
+    width: 100%;
+    border: 1px solid var(--socials-container-border-color);
+    border-radius: 6px;
+    flex-direction: column;
+    padding: 20px;
+    color: var(--light-black-color);
+}
+/* socials head */
+.logIn_with_socials_head{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+/* socials info */
+.logIn_with_socials_info{
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+}
+.logIn_with_socials_icons_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+.logIn_with_socials_icons{
+    font-size: 11px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+    border: 2px solid var(--social-item-border-color);
+    border-radius: 6px;
+    padding: 5px 4px;
+}
+.logIn_with_socials_icons i{
+    font-size: 22px;
+    margin-right: 5px;
+}
+/* ___________ signUp password checker ____________ */
+.log_in_form_password_checker_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+.log_in_form_password_checker{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.log_in_form_password_warning{
+    width: 15px;
+    height: 15px;
+    border-radius: 30px;
+    border: 1px solid var(--checkbox-color);
+    margin-right: 10px;
+}
+.true_password_color{
+    background-color: var(--true-password-color);
+}
+/* ________ conditions head __________ */
+.log_in_form_signUp_condition_head{
+    width: 100%;
+    font-size: 12px;
+    color: var(--light-black-color);
+    margin-bottom: 20px;
+}
+.log_in_form_signUp_condition_head span{
+    text-decoration: underline;
+    cursor: pointer;    
+}
+/* _________ conditions _______ */
+.log_in_form_signUp_condition_container{
+    display: flex;
+    flex-direction: column;
+}
+.log_in_form_third_line_conditions{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.conditions_checkbox{
+    width: 16px;
+    height: 16px;
+    accent-color: var(--white-color);
+}
+#conditions_checkbox_first, #conditions_checkbox_second, #conditions_checkbox_third{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    accent-color: var(--white-color);
+    border: 2px solid var(--checkbox-color);
+}
+#conditions_checkbox_first:checked, #conditions_checkbox_second:checked, #conditions_checkbox_third:checked{
+    border: 2px solid var(--checkbox-color);
+}
+/* _________________ checkbox text ___________________ */
+.sign_up_checkbox_name{
+    width: 90%;
+    font-size: 12px;
+    color: var(--light-black-color);
+}
+.sign_up_checkbox_name_required::after{
+    content: "*";
+    color: var(--dark-red);
+    margin-left: 5px;
+}
+.sign_up_checkbox_name span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* __________ forget password window ____________ */
+@keyframes uye_ol{
+    from{opacity: 0.8;};
+    to{opacity: 1;}
+}
+.log_in_page_forgot_password_window{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    background-color: var(--opacity-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.forgot_password_window_display_flex{
+    display: flex;
+    animation: 0.5s uye_ol;
+}
+/* _______ forgot password window container _______________ */
+.forgot_password_window_container{
+    width: 80%;
+    max-width: 498px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-color);
+    position: absolute;
+    z-index: 1001;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* _________ window header _____________ */
+.forgot_password_window_header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+    border-bottom: 1px solid var(--forgot-window-header-border);
+}
+.forgot_password_window_header_name{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--light-black-color);
+}
+/* __________ close icon ____________ */
+.forgot_password_window_close_btn{
+    font-size: 23px;
+    cursor: pointer;
+}
+/* _________ forgot password window body */
+.forgot_password_window_body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 16px;
+}
+/* window body text */
+.forgot_password_window_body_text{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: var(--light-black-color);
+}
+/* __________ window body form _____________ */
+.forgot_password_window_form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* form input */
+.forgot_password_window_body_input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    color: var(--light-black-color);
+    font-size: 15px;
+    outline: none;
+    margin-bottom: 16px;
+}
+/* form submit button */
+.forgot_password_window_form button{
+    background: var(--forgot-window-submit-bg-color);
+    color: var(--light-black-color);
+    padding: 10px 30px;
+    margin-bottom: 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* __________ sign up information window _____________________ */
+.sign_up_info_window{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    background-color: var(--opacity-black);
+    display: none;
+}
+.sms_izni_window{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    background-color: var(--opacity-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.sign_up_info_display_flex{
+    display: block;
+    animation: 0.5s uye_ol;
+}
+/* _______ sign up information window container _______________ */
+.sign_up_info_container{
+    width: 95%;
+    max-width: 798px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-color);
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.sms_izni_container{
+    max-width: 498px;
+    margin: auto;
+    position: absolute;
+    z-index: 1001;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sign_up_info_window_header_name{
+    font-size: 24px;
+    color: var(--light-black-color);
+    font-weight: 500;
+}
+.sign_up_info_window_close_btn{
+    font-size: 22px;
+    cursor: pointer;
+}
+.sign_up_info_body{
+    width: 100%;
+    padding: 16px;
+    color: var(--light-black-color);
+    font-size: 16px;
+    line-height: 1.3;
+}
+.sign_up_info_body p{
+    margin: 16px 0px;
+}
+.sign_up_info_body p a{
+    color: var(--link-blue-color);
+}
+.sign_up_info_body ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 26px;
+}
+.sign_up_info_body ul li{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.centered_paragraph{
+    text-align: center;
+}
+.indent_list_par{
+    padding-left: 80px;
+}
+.justified_paragraph{
+    text-align: justify;
+}
+.sign_up_info_footer{
+    width: 100%;
+    padding: 16px;
+}
+/* sign up window footer close btn */
+.sign_up_info_close_btn{
+    width: 80%;
+    max-width: 114px;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+    padding: 10px 30px;
+    background-color: var(--white-color);
+    color: var(--light-black-color);
+    border: 1px solid var(--light-black-color);
+    cursor: pointer;
+    border-radius: 5px;
+}
+.sign_up_info_close_btn:hover{
+    background-color: var(--light-black-color);
+    color: var(--white-color);
+}
+/* ___________ responsive ____________________ */
+@media (width <= 1023px){
+    .log_in_page{
+        margin-top: 45px;
+    }
+}
+@media (width <= 768px){
+    .log_in_page_container{
+        width: 95%;
+        max-width: unset;
+    }
+    .log_in_page_logIn_box, .log_in_page_sign_up_box{
+        font-size: 13px;
+    }
+    .log_in_form_third_line{
+        width: 100%;
+    }
+    .logIn_with_socials_icons_container{
+        justify-content: flex-end;
+    }
+    .log_in_social_name{
+        display: none;
+    }
+    .logIn_with_socials_icons i{
+        margin-right: unset;
+    }
+    .sign_up_info_window_header_name{
+        font-size: 20px;
+    }
+    .indent_list_par{
+        padding-left: 40px;
+    }
+}
+@media (width <= 575px){
+    .sms_izni_container{
+        position: unset;   
+        transform: unset;
+        margin: 20px auto;
+    }
+}

@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jacques+Francois+Shadow&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* ___________________ about page _______________________*/
+.about_page{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+/* ____ first section ______ */
+.about_page_first_section{
+    width: 98%;
+    margin: auto;
+}
+/* ____ head image _________ */
+.about_head_image{
+    width: 100%;
+    height: 563px;
+    margin: 20px 0px;
+    background-image: url(https://6rk3rbju.rocketcdn.com/image/banner/karaca/lp/about/main-image.svg);
+    position: relative;
+}
+/* ____________ text box container _____________*/
+.about_head_text{
+    margin: auto !important;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    max-width: 470px;
+    /* height: 300px; */
+    background-color: #ffffff;
+    box-shadow: -5px -2px 30px -20px rgb(0 0 0 / 75%);
+    border-radius: 20px;
+    padding: 20px;
+}
+.about_head_text_container{
+    display: flex;
+    flex-direction: column;
+    padding: 29px 0;
+}
+/* ____ karaca logo _______*/
+.about_head_text_container img{
+    width: 114px;
+    margin: auto;
+}
+/* ____ head text title ________*/
+.about_head_text_title{
+    font-size: 20px;
+    font-family: Roboto, helvetice, sans-serif;
+    text-align: center;
+    margin: 30px 0;
+    font-weight: 500;
+}
+/* ______ head text body _______*/
+.about_head_text_body{
+    font-size: 16px;
+    font-family: Roboto, helvetice, sans-serif;
+    text-align: center;
+}
+/* ___________ about second text ___________________*/
+.about_second_text{
+    text-align: center;
+    font-size: 14px;
+    font-family: Roboto, helvetice, sans-serif;
+    margin-bottom: 15px;
+    margin-top: 140px;
+}
+/* _________ about youtube video ___________________ */
+.about_youtube_video_container{
+    width: 100%;
+}
+/* _________ video under text _______________________*/
+.about_video_under_text{
+    width: 100%;
+    font-family: Roboto, helvetice, sans-serif;
+    text-align: center;
+    color: #383838;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.about_video_owner{
+    font-size: 24px;
+    font-weight: bold;
+}
+.about_video_job_title{
+    font-size: 20px;
+}
+/* ________ about seperator _________*/
+.about_seperator_line{
+    width: 98%;
+    margin: auto;
+    margin-bottom: 80px;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+.about_seperator_image_container{
+    width: 120px;
+    margin: auto !important;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: -15px;
+}
+.about_seperator_image_container img{
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+/* ____ about seond section _______*/
+.about_page_second_section{
+    width: 100%;
+}
+/* ________ about question container __________ */
+.about_questions_container{
+    width: 100%;
+    background-color: #F0F0F0;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.about_question{
+    width: 50%;
+    padding: 0px 15px;
+    font-family: Roboto, helvetice, sans-serif;
+    text-align: center;
+}
+.about_question_head{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.about_question_body{
+    width: 70%;
+    margin: auto;
+    font-size: 14px;
+}
+/* __________________ third section container ______________*/
+.about_page_third_section{
+    width: 98%;
+    margin: 50px auto;
+}
+.about_third_section_heading{
+    text-align: center;
+    font-size: 20px;
+    font-family: Roboto, helvetice, sans-serif;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.about_third_section_items_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.about_third_section_item{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+}
+/* ________ about third section item image ____________*/
+.about_third_section_item_image{
+    width: 32%;
+}
+.about_third_section_item_image_first img{
+    max-width: 86.14px;
+    width: 90%;
+}
+.about_third_section_item_image_second img{
+    max-width: 64.95px;
+    width: 90%;
+}
+.about_third_section_item_image_third img{
+    max-width: 60.97px;
+    width: 90%;
+}
+.about_third_section_item_image_fourth img{
+    max-width: 78.3px;
+    width: 90%;
+}
+/* ________ about third section item text ____________*/
+.about_third_section_item_text{
+    width: 60%;
+    font-size: 14px;
+    font-family: Roboto, helvetice, sans-serif;
+}
+/* ________ about last section ______________________ */
+.about_page_last_section{
+    width: 100%;
+    background-color: #F0F0F0;
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Roboto, helvetice, sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+@media (max-width: 1023px){
+    .about_page{
+        margin-top: 45px;
+    }
+}
+/* _______ about responsive _______________ */
+@media (max-width: 768px){
+    /* ________ youtube video __________ */
+    .about_youtube_video_container iframe{
+        height: 155.8px;
+    }
+    /* ________ questions ______________ */
+    .about_questions_container{
+        flex-direction: column;
+    }
+    .about_question{
+        width: 100%;
+        margin-bottom: 20px
+    }
+    /* _________ third section container ___________*/
+    .about_third_section_items_container{
+        flex-direction: column;
+    }
+    .about_third_section_item{
+        width: 100%;
+        margin-bottom: 20px;
+        justify-content: unset;
+    }
+    /* ________ about third section item image ____________*/
+    .about_third_section_item_image{
+        width: unset;
+        padding-right: 30px
+    }
+    .about_third_section_item_image_first img{
+        max-width: 146.48px;
+        width: 100%;
+    }
+    .about_third_section_item_image_second img{
+        max-width: 98.98px;
+        width: 90%;
+    }
+    .about_third_section_item_image_third img{
+        max-width: 114.08px;
+        width: 90%;
+    }
+    .about_third_section_item_image_fourth img{
+        max-width: 125px;
+        width: 90%;
+    }
+    .about_third_section_item_text{
+        width: unset;
+    }
+}

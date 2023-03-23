@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jacques+Francois+Shadow&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* _____ ozel urun page ____________ */
+.ozel_urun_page{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+.ozel_urun_page_container{
+    width: 98%;
+    margin: auto;
+    margin-bottom: 52px;
+}
+/* _______ images container ____________ */
+.ozel_urun_page_images{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ___________ image ___________________ */
+.ozel_urun_page_image{
+    width: 89%;
+    margin: auto;
+    margin-bottom: 24px;
+}
+.ozel_urun_page_image a{
+    display: block;
+    width: 100%;
+}
+.ozel_urun_page_image a img{
+    width: 100%;
+    height: auto;
+}
+/* ________ page text _________ */
+.ozel_urun_page_text_container{
+    width: 100%;
+}
+.ozel_urun_page_text_container p{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+@media (width <= 1023px){
+    .ozel_urun_page{
+        margin-top: 45px;
+    }
+}
+@media (width <= 767px){
+    .ozel_urun_page_container{
+        width: 100%;
+    }
+    .ozel_urun_page_text_container{
+        width: 95%;
+        margin: auto;
+    }
+    .ozel_urun_page_image{
+        width: 100%;
+        /* padding: 8px; */
+    }
+}

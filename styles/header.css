@@ -1,0 +1,1539 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jacques+Francois+Shadow&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --opacity-black: #383838b6;
+    --white-color: #fff;
+    --border-gray-color: #dee2e6;
+    --input-border-gray-color: #ddd;
+    --black-color: #383838;
+}
+body{
+    font-family: Roboto, helvetice, sans-serif;
+}
+/* _____________ Header ___________________________________________________ */
+.desktop_header{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 24px;
+    position: relative;
+}
+/* _____ header container ______________ */
+.header_container{
+    width: 98%;
+    margin: auto;
+}
+/* ____________________ first header ____________________*/
+.header_first{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+/* _____________________ left links _____________________*/
+.left_links{
+    width: 24%;
+    min-width: 257px;
+    max-width: 306px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5px;
+}
+.left_link_item, .kompaniya_text{
+    font-size: 14px;
+    font-family: Roboto, helvetice, sans-serif;
+}
+.left_link_item:first-child{
+    color: #383838;
+}
+.left_link_item:nth-child(2), .left_link_item:nth-child(3) {
+    color: #c6c6c6;
+}
+/* _________________________ kompany container ____________________________*/
+.kompanya_container{
+    width: 20%;
+    text-align: center;
+}
+.kompaniya_text{
+    color: #00B463;
+}
+/* __________________________ right links _________________________________*/
+.right_links{
+    width: 33%;
+    min-width: 375px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.right_link_item{
+    font-size: 13px;
+    font-family: 'Roboto', 'helvetica', sans-serif;
+}
+.inline_items{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.siparish_image{
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+}
+/* __________________ header tracker log in pop up _________________________*/
+@keyframes uye_ol{
+    from{opacity: 0.8;};
+    to{opacity: 1;}
+}
+.header_tracker_log_in_pop_up_window{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    background-color: var(--opacity-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.tracker_log_in_pop_up_window_display{
+    display: flex;
+    animation: 0.5s uye_ol;
+}
+.tracker_log_in_pop_up_container{
+    width: 95%;
+    max-width: 498px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-color);
+    position: absolute;
+    z-index: 1001;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* log in header */
+.tracker_log_in_pop_up_header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid var(--border-gray-color);
+}
+.tracker_log_in_pop_up_header_name{
+    line-height: 1.5;
+    font-size: 24px;
+    font-weight: 500;
+}
+/* close btn */
+.tracker_log_in_close_btn{
+    font-size: 22px;
+    cursor: pointer;
+}
+.tracker_log_in_pop_up_body{
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+/* pop up form */
+.tracker_log_in_pop_up_body form{
+    width: 100%;
+}
+/* form label */
+.tracker_log_in_pop_up_body form label{
+    font-size: 14px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+/* form input */
+.tracker_log_in_pop_up_body form label input{
+    outline: none;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 3px;
+    border-radius: 5px;
+    border: 1px solid var(--input-border-gray-color);
+}
+.tarcker_search_btn{
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 30px;
+    text-align: center;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* ______________________ Second header ____________________________________*/
+.header_second{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+/* _______________________ Karaca logo ____________________*/
+.logo{
+    width: 25%;
+    height: 46.25px;
+}
+/* _________ product search _______*/
+.search_container{
+    width: 40%;
+    height: 40px;
+    position: relative;
+}
+.search_form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #c6c6c6;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.search_container form input{
+    width: 85%;
+    height: 38px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+}
+/* ___________________ popular searches _______________________________*/
+/* ______ container of popular searches _____*/
+.search_Popular_container{
+    display: none;
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+    background-color: white;
+    top: 40px;
+    border: 1px solid #f1f1f1;
+    border-top: none;
+    padding: 15px;
+    font-family: 'Roboto', 'helvetica', sans-serif;
+}
+.search_Popular{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+.popular_searches_text{
+    color: #383838;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+/* ______________ tags ___________________*/
+.popular_tags{
+    width: 32%;
+    max-width: 156px;
+    min-width: 148px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.popular_tags a{
+    border-radius: 30px;
+    font-size: 12px;
+    background-color: #383838;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+}
+.popular_categories_text{
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+/* _________________ popular link __________________________*/
+.popular_categories_links{
+    width: 16%;
+    margin-bottom: 10px;
+}
+.popular_link{
+    width: 100%;
+}
+.popular_link_image{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    position: relative;
+}
+.popular_search_category_icon_name{
+    font-size: 22px;
+    /* height: 24px; */
+    position: absolute;
+    top: 23px;
+    left: 25px;
+}
+.popular_link_text{
+    width: 66px;
+    font-size: 12px;
+    /* text-align: center; */
+    padding: 0 5px;
+}
+/* _________________ right side in the second header __________________*/
+.header_second_right{
+    width: 27%;
+    max-width: 349px;
+    min-width: 289px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    font-family: 'Roboto', 'helvetica', sans-serif;
+}
+/* ____ location _____________*/
+.location_container{
+    width: 33%;
+    height: 40px;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    padding: 0 10px 0 5px;
+}
+.location_container img{
+    width: 31.99px;
+}
+/* ______________ favourites __________*/
+.favourites img{
+    width: 23.99px;
+}
+/* ______________ account drop menu _______________________*/
+.my_account{
+    position: relative;
+    cursor: pointer;
+}
+.account_drop_Menu_container{
+    display: none;
+    z-index: 11;
+    position: absolute;
+    right: -165%;
+    transition: 1s ease;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.account_up_icon{
+    font-size: 30px;
+    color: #f1f1f1;
+    padding: 0;
+    margin-top: 5px;
+}
+.account_drop_Menu{
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    padding: 30px;
+    width: 220px;
+    position: relative;
+    bottom: 18px;
+}
+.account_drop_Menu_container ul li{
+    padding: 10px 0;
+    font-size: 13px;
+    font-family: 'Roboto', 'helvetica', sans-serif;
+}
+.my_account:hover .account_drop_Menu_container{
+    display: flex;
+}
+/*____________________ card _______________________________*/
+.card_container a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card_container img{
+    width: 21.99px;
+    padding-right: 5px;
+}
+/*____________________ categories ___________________________*/
+.header_third{
+    width: 92%;
+    max-width: 1188px;
+    min-width: 950px;
+}
+.header_third_list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.header_third .category_link{
+    font-size: 14px;
+    font-family: 'Roboto', 'helvetica', sans-serif;
+    color: #383838;
+}
+.header_third .category_link:hover{
+    text-decoration: underline;
+}
+/* _____________________ Category drop down _______________________*/
+/* ______________________ drop down container _*/
+.category_drop_down{
+    position: absolute;
+    left: 0;
+    display: none;
+    width: 100%;
+    max-width: 1440px;
+    padding: 20px;
+    font-size: 14px;
+    font-family: 'Roboto', 'helvetica', sans-serif;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+}
+.drop_down_container{
+    width: 100%;
+    max-width: 1173px;
+    margin-top: 24px;    
+}
+.mutfak_drop_down_container{
+    width: 100%;
+    margin-top: 24px;
+}
+/* ________________ category drop down animation ____________________*/
+@keyframes category{
+    from {opacity: 0.5;}
+    to {opacity: 1;}
+}
+.category_animation{
+    animation: 0.5s category;
+}
+/*________________________ showing drop down with hover _____________*/
+.header_third_list li a{
+    display: block;
+}
+.header_third_list li:hover .category_drop_down{
+    display: block;
+}
+/* _____________________ first row of drop down ___________________ */
+.drop_down_row_first{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.mutfak_drop_down_row_first{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+/* _____________________ drop down items __________________________ */
+.drop_down_item{
+    /* width: 25%; */
+    display: flex;
+    flex-direction: row;
+}
+.mutfak_drop_down_items{
+    /* width: 43%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* _____________________ drop down image container ________________ */
+.drop_down_item_image_cont{
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+.mutfak_drop_down_right_image_cont{
+    width: 32%;
+    border-left: 1px solid #F9F9F9;
+}
+/* _____________________ drop down image ___________________________ */
+.drop_down_item_image{
+    width: 60px;   
+}
+.mutfak_right_image{
+    width: 100%;
+    /* height: 166.8px; */
+}
+/* _____________________ drop down list ______________________________*/
+.drop_down_item_list{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.list_head{
+    font-weight: bold;
+}
+.drop_down_item_list ul li{
+    padding: 5px 0;
+}
+.drop_down_row_second{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+/* ___________hiding mobile view in desktop ________________________________*/
+.mobile_header{
+    display: none;
+}
+/* __________________________________________________________________________*/
+/* _______________________ Mobile responsive ________________________________*/
+/* _________________________________________________________________________ */
+@media (max-width:1023px){
+    /* hiding desktop view in mobile */
+    .desktop_header{
+        display: none;
+    }
+    /* ____________________ mobile header ___________________________________*/
+    .mobile_header{
+        display: block;
+        width: 100%;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        background-color: rgb(255, 255, 255);
+    }
+    .mobile_header_container{
+        width: 98%;
+        margin: auto;
+        padding: 10px 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* display: none; */
+    }
+    .scrollShadow{
+        box-shadow: 0 0 14px #00000059;
+    }
+    /* ______________ mobile menu and logo _________________________________*/
+    .menu_and_logo_container{
+        width: 12%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mobile_header_menu_bar{
+        width: 30px;
+        height: 25px;
+    }
+    .mobile_logo{
+        width: 100px;
+        height: 22px;
+    }
+    .mobile_logo img{
+        width: 100px;
+        height: 22px;
+    }
+    /* _______________________mobile header right side links ________________*/ 
+    .right_links_container{
+        width: 15%;
+        max-width: 129px;
+        min-width: 115px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .right_links_container img{
+        width: 20px;
+        height: 20px;
+    }
+    .mobile_header_account_container i{
+        font-size: 21px;
+    }
+    .mobile_header_search_image_container, .mobile_popular_searches_close{
+        cursor: pointer;
+    }
+    /* ____ mobile popular search container _______ */
+    .mobile_header_popular_searches{
+        width: 100%;
+        height: 100vh;
+        overflow-y: auto;
+        padding: 15px 15px 100px;
+        display: none;
+        position: absolute;
+        top: 0;
+        z-index: 1000;
+        background-color: #ffffff;
+    }
+    .mobile_header_popular_searches_container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    /* ____ mobile search container _____*/
+    .mobile_search_input_container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    /* _____ mobile search logo ________ */
+    .mobile_search_input_container img{
+        width: 25px;
+    }
+    /* ____ mobile search input _____*/
+    .mobile_search_input{
+        width: 90%;
+    }
+    .mobile_search_input input{
+        width: 100%;
+        height: 30px;
+        padding: 5px 10px;
+        font-size: inherit;
+        outline: none;
+        border: none;
+    }
+    /* _____ mobile popular search close ________ */
+    .mobile_search_input_container i{
+        font-size: 28px;
+        opacity: 0.5;
+    }
+    .search_Popular{
+        font-size: 12px;
+        font-family: Roboto, helvetice, sans-serif;
+    }
+    /* ______________________ mobile menu-bar window ________________________*/
+    .mobile_menu_bar_window{
+        width: 100%;
+        display: none;
+    }
+    .menu_bar_window_container{
+        width: 100%;
+    }
+    /* ______________________ menu bar window header container _____________ */
+    .menu_bar_window_header{
+        width: 100%;
+        height: 47px;
+        border-bottom: 2px solid #f1f1f1;
+        padding: 11px 0;
+    }
+    .menu_bar_window_header_container{
+        width: 95%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu_bar_window_header_container button{
+        border: none;
+        outline: none;
+        background: transparent;
+        cursor: pointer;
+    }
+    /* ______________________ Close button _________ */
+    .menu_bar_window_header_container i{
+        font-size: 21px;
+        font-weight: 100;
+        opacity: 0.5;
+    }
+    /* _____________________ logo_________________ */
+    .menu_window_mobile_logo{
+        width: 40px;
+        height: 25px;
+    }
+    /* _____________________ search ______________*/
+    .menu_window_mobile_search{
+        width: 20px;
+        height: 20px;
+    }
+    /* _____________________ Scrolling window container _____________________*/
+    .scrolling_window_container{
+        width: 100%;
+        height: 100vh;
+        overflow-y: scroll;
+        background-color: #fafafa;
+        padding-top: 10px;
+        padding-bottom: 100px;
+    }
+    /* __________ account logIn register buttons _______________________ */
+    .account_logIn_register_buttons{
+        width: 95%;
+        margin: auto;
+        /* display: none; */
+    }
+    .logIn_register_buttons_container{
+        width: 25%;
+        min-width: 235px;
+        min-width: 180px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 14px;
+        font-family: Roboto, helvetice, sans-serif;
+    }
+    /* ________ log in ________ */
+    .menu_log_in{
+        width: 50%;
+        max-width: 118px;
+        min-width: 90px;
+        height: 40px;
+        background-color: #fff;
+        border: 1px solid #383838;
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px 0;
+    }
+    /* ________ register _______*/
+    .menu_register{
+        width: 40%;
+        max-width: 101px;
+        min-width: 80px;
+        height: 40px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border: 1px solid #383838;
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px 0;
+    }
+    /* _____________ category menu __________________*/
+    .menu_categories_list_container{
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        /* display: none; */
+    }
+    /* _____________ category list __________________*/
+    .menu_categories_list{
+        width: 95%;
+        margin: auto;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu_categories_list li a{
+        width: 98%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #f1f1f1;    
+    }
+    .menu_categories_list li:last-child{
+        border-bottom: unset;    
+    }
+    /* _________________ category icon and name container ________*/
+    .menu_category_icon_name{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    /* _____________ icon _________________*/
+    .menu_category_icon_name i{
+        font-size: 24px;
+        width: 40px;
+        /* height: 36px; */
+        /* color: gray; */
+        opacity: 0.5;
+    }
+    .menu_category_icon_name img{
+        width: 30px;
+        height: 26px;
+        margin-right: 10px;
+        opacity: 0.5;   
+    }
+    /* __________________ category name __________________________*/
+    .menu_category_name{
+        /* margin-left: 5px; */
+        font-size: 16px;
+        font-family: Roboto, helvetice, sans-serif;
+    }
+    /* __________________ arrow right ____________________________*/
+    .arrow_right img{
+        width: 16px;
+        height: 16px;
+    }
+    /* __________________ helping pages ___________________________*/
+    /* _____ header _____*/
+    .helping_pages_header{
+        width: 100%;
+        padding: 15px;
+        font-size: 20px;
+        font-family: Roboto, helvetice, sans-serif;
+    }
+    /* _______ helping pages list __________*/
+    .helping_pages_container{
+        width: 100%;
+        background-color: #ffffff;
+    }
+    .helping_pages_list{
+        width: 95%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .helping_pages_list li{
+        width: 98%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #f1f1f1;
+    }
+    .helping_pages_list li:last-child{
+        border-bottom: unset;    
+    }
+    .helping_pages_list li a{
+        width: 100%;
+        font-size: 16px;
+        font-family: Roboto, helvetice, sans-serif;
+        display: flex;
+        align-items: center;
+    }
+    /* _______ helping pages list icons __________*/
+    .helping_pages_list li a i{
+        font-size: 24px;
+        width: 40px;
+        opacity: 0.5;
+    }
+    .helping_pages_list li a img{
+        width: 30px;
+        height: 26px;
+        margin-right: 10px;
+        opacity: 0.5;   
+    }
+    /* ___________ animation from right to left _______________ */
+    @keyframes right_left{
+        from{left:50%}
+        to{left:0}
+    }
+    /* ________________ Subcategory Container _____________________________*/
+    .subCategories_container{
+        width: 100%;
+        background-color: #ffffff;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+        top: 47px;
+        background-color: #ffffff;
+        overflow-y: scroll;
+        height: 100vh;
+        display: none;
+        animation: 0.1s right_left;
+    }
+    .menu_Subcategory{
+        width: 95%;
+        margin: auto;
+        padding-bottom: 100px;
+        /* display: none; */
+    }
+    /* _____ displaying subcategories with id in a.href link _________*/
+    /* Sofra Subcategory*/
+    #sofra_Subcategory{
+        display: none;
+    }
+    #sofra_Subcategory:target{
+        display: block;
+    }
+    /* Mutfak Subcategory */
+    #Mutfak_Subcategory{
+        display: none;
+    }
+    #Mutfak_Subcategory:target{
+        display: block;
+    }
+    /* kucuk ev aletleri Subcategory */
+    #kucuk_ev_aletleri{
+        display: none;
+    }
+    #kucuk_ev_aletleri:target{
+        display: block;
+    }
+    /* Ev Tekstili Subcategory */
+    #Ev_Tekstili{
+        display: none;
+    }
+    #Ev_Tekstili:target{
+        display: block;
+    }
+    /* Aksesuar Subcategory */
+    #Aksesuar{
+        display: none;
+    }
+    #Aksesuar:target{
+        display: block;
+    }
+    /* Halı Subcategory */
+    #hali{
+        display: none;
+    }
+    #hali:target{
+        display: block;
+    }
+    /* Sadece Karaca.com-da Subcategory */
+    #Sadece_Karaca_comda{
+        display: none;
+    }
+    #Sadece_Karaca_comda:target{
+        display: block;
+    }
+    /* cok satan Subcategory */
+    #cok_satan{
+        display: none;
+    }
+    #cok_satan:target{
+        display: block;
+    }
+    /* yemek takimlari subcategory in sofra Subcategory */
+    #yemek_takimlari{
+        display: none;
+    }
+    #yemek_takimlari:target{
+        display: block;
+    }
+    /* Kahvalti Ve Pasta Takimlari subcategory in sofra Subcategory */
+    #Kahvalti_Ve_Pasta_Takimlari{
+        display: none;
+    }
+    #Kahvalti_Ve_Pasta_Takimlari:target{
+        display: block;
+    }
+    /* Catal Kasik Bicak Takimlari subcategory in sofra Subcategory */
+    #Catal_Kasik_Bicak_Takimlari{
+        display: none;
+    }
+    #Catal_Kasik_Bicak_Takimlari:target{
+        display: block;
+    }
+    /* Tekli_urunler subcategory in sofra Subcategory */
+    #Tekli_urunler{
+        display: none;
+    }
+    #Tekli_urunler:target{
+        display: block;
+    }
+    /* Kahve Fincanlari Ve cay Setleri subcategory in sofra Subcategory */
+    #Kahve_Fincanlari_Ve_cay_Setleri{
+        display: none;
+    }
+    #Kahve_Fincanlari_Ve_cay_Setleri:target{
+        display: block;
+    }
+    /* Sofra servis subcategory in sofra Subcategory */
+    #Sofra_servis{
+        display: none;
+    }
+    #Sofra_servis:target{
+        display: block;
+    }
+    /* servis sunum subcategory in sofra Subcategory */
+    #servis_sunum{
+        display: none;
+    }
+    #servis_sunum:target{
+        display: block;
+    }
+    /* Sofra Tamamlayici Parcalar subcategory in sofra Subcategory */
+    #Sofra_Tamamlayici_Parcalar{
+        display: none;
+    }
+    #Sofra_Tamamlayici_Parcalar:target{
+        display: block;
+    }
+    /* pisirme subcategory in Mutfak subcategory */
+    #pisirme{
+        display: none;
+    }
+    #pisirme:target{
+        display: block;
+    }
+    /* İçecek Hazırlama subcategory in Mutfak subcategory */
+    #icecek_hazirlama{
+        display: none;
+    }
+    #icecek_hazirlama:target{
+        display: block;
+    }
+    /* hazirlik gerecleri subcategory in Mutfak subcategory */
+    #hazirlik_gerecleri{
+        display: none;
+    }
+    #hazirlik_gerecleri:target{
+        display: block;
+    }
+    /* mutfak gerecleri subcategory in Mutfak subcategory */
+    #mutfak_gerecleri{
+        display: none;
+    }
+    #mutfak_gerecleri:target{
+        display: block;
+    }
+    /* mutfak tekstili subcategory in Mutfak subcategory */
+    #mutfak_tekstili{
+        display: none;
+    }
+    #mutfak_tekstili:target{
+        display: block;
+    }
+    /* mutfak_tamamlayici_parcalar subcategory in Mutfak subcategory */
+    #mutfak_tamamlayici_parcalar{
+        display: none;
+    }
+    #mutfak_tamamlayici_parcalar:target{
+        display: block;
+    }
+    /* mutfak sever subcategory in Mutfak subcategory */
+    #mutfak_sever{
+        display: none;
+    }
+    #mutfak_sever:target{
+        display: block;
+    }
+    /* icecek_hazirlama subcategory in kucuk ev aletleri subcategory */
+    #kucuk_ev_aletleri_icecek_hazirlama{
+        display: none;
+    }
+    #kucuk_ev_aletleri_icecek_hazirlama:target{
+        display: block;
+    }
+    /* gida hazirlama subcategory in kucuk ev aletleri subcategory */
+    #gida_hazirlama{
+        display: none;
+    }
+    #gida_hazirlama:target{
+        display: block;
+    }
+    /*  supurge subcategory in kucuk ev aletleri subcategory */
+    #supurge{
+        display: none;
+    }
+    #supurge:target{
+        display: block;
+    }
+    /* pisirme  subcategory in kucuk ev aletleri subcategory */
+    #kucuk_ev_aletleri_pisirme{
+        display: none;
+    }
+    #kucuk_ev_aletleri_pisirme:target{
+        display: block;
+    }
+    /* mutfak sever subcategory in kucuk ev aletleri subcategory */
+    #kucuk_ev_aletleri_mutfak_sever{
+        display: none;
+    }
+    #kucuk_ev_aletleri_mutfak_sever:target{
+        display: block;
+    }
+    /* anne-bebek gerecleri subcategory in kucuk ev aletleri subcategory */
+    #anne-bebek_gerecleri{
+        display: none;
+    }
+    #anne-bebek_gerecleri:target{
+        display: block;
+    }
+    /* elektrikli ceyiz seti subcategory in kucuk ev aletleri subcategory */
+    #elektrikli_ceyiz_seti{
+        display: none;
+    }
+    #elektrikli_ceyiz_seti:target{
+        display: block;
+    }
+    /* tamamlayici parcalar subcategory in kucuk ev aletleri subcategory */
+    #tamamlayici_parcalar{
+        display: none;
+    }
+    #tamamlayici_parcalar:target{
+        display: block;
+    }
+    /* Yatak Odası subcategory in Ev Tekstili subcategory */
+    #ev_tekstili_yatak_odasi{
+        display: none;
+    }
+    #ev_tekstili_yatak_odasi:target{
+        display: block;
+    }
+    /* banyo subcategory in Ev Tekstili subcategory */
+    #ev_tekstili_banyo{
+        display: none;
+    }
+    #ev_tekstili_banyo:target{
+        display: block;
+    }
+    /* aksesuar subcategory in Ev Tekstili subcategory */
+    #ev_tekstili_aksesuar{
+        display: none;
+    }
+    #ev_tekstili_aksesuar:target{
+        display: block;
+    }
+    /* bebek-cocuk subcategory in Ev Tekstili subcategory */
+    #ev_tekstili_bebek_cocuk{
+        display: none;
+    }
+    #ev_tekstili_bebek_cocuk:target{
+        display: block;
+    }
+    /* Sofra ve Mutfak Tekstili subcategory in Ev Tekstili subcategory */
+    #ev_tekstili_sofra_mutfak_tekstili{
+        display: none;
+    }
+    #ev_tekstili_sofra_mutfak_tekstili:target{
+        display: block;
+    }
+    /* Halı subcategory in Ev Tekstili subcategory */
+    #ev_tekstili_hali{
+        display: none;
+    }
+    #ev_tekstili_hali:target{
+        display: block;
+    }
+    /*  Sofra Aksesuarı subcategory in Aksesuar subcategory */
+    #aksesuar_sofra_aksesuari{
+        display: none;
+    }
+    #aksesuar_sofra_aksesuari:target{
+        display: block;
+    }
+    /*  dekoratif aksesuarlar subcategory in Aksesuar subcategory */
+    #aksesuar_dekoratif_aksesuarlar{
+        display: none;
+    }
+    #aksesuar_dekoratif_aksesuarlar:target{
+        display: block;
+    }
+    /*  salon halısı in Halı subcategory */
+    #hali_salon_halısı{
+        display: none;
+    }
+    #hali_salon_halısı:target{
+        display: block;
+    }
+    /*  oda halısı in Halı subcategory */
+    #hali_oda_halısı{
+        display: none;
+    }
+    #hali_oda_halısı:target{
+        display: block;
+    }
+    /* cocuk genc halısı in Halı subcategory */
+    #hali_cocuk_genc_halısı{
+        display: none;
+    }
+    #hali_cocuk_genc_halısı:target{
+        display: block;
+    }
+    /* mutfak halısı in Halı subcategory */
+    #hali_mutfak_halısı{
+        display: none;
+    }
+    #hali_mutfak_halısı:target{
+        display: block;
+    }
+    /* Yolluk in Halı subcategory */
+    #hali_yolluk{
+        display: none;
+    }
+    #hali_yolluk:target{
+        display: block;
+    }
+    /* kilim in Halı subcategory */
+    #hali_kilim{
+        display: none;
+    }
+    #hali_kilim:target{
+        display: block;
+    }
+    /* Gıda Hazırlama subcategory in Sadece Karaca.com-da subcategory */
+    #sadece_karacada_gida_hazırlama{
+        display: none;
+    }
+    #sadece_karacada_gida_hazırlama:target{
+        display: block;
+    }
+    /* pisirme subcategory in Sadece Karaca.com-da subcategory */
+    #sadece_karacada_pisirme{
+        display: none;
+    }
+    #sadece_karacada_pisirme:target{
+        display: block;
+    }
+    /* icecek hazirlama subcategory in Sadece Karaca.com-da subcategory */
+    #sadece_karacada_icecek_hazirlama{
+        display: none;
+    }
+    #sadece_karacada_icecek_hazirlama:target{
+        display: block;
+    }
+    /* supurge subcategory in Sadece Karaca.com-da subcategory */
+    #sadece_karacada_supurge{
+        display: none;
+    }
+    #sadece_karacada_supurge:target{
+        display: block;
+    }
+    /* utu subcategory in Sadece Karaca.com-da subcategory */
+    #sadece_karacada_utu{
+        display: none;
+    }
+    #sadece_karacada_utu:target{
+        display: block;
+    }
+    /* Çok Satan Kategoriler subcategory in Cok satan subcategory */
+    #cok_satan_cok_satan_kategoriler{
+        display: none;
+    }
+    #cok_satan_cok_satan_kategoriler:target{
+        display: block;
+    }
+    /* koleksiyonlar subcategory in Cok satan subcategory */
+    #cok_satan_koleksiyonlar{
+        display: none;
+    }
+    #cok_satan_koleksiyonlar:target{
+        display: block;
+    }
+    /* cok satanlar subcategory in Cok satan subcategory */
+    #cok_satan_cok_satanlar{
+        display: none;
+    }
+    #cok_satan_cok_satanlar:target{
+        display: block;
+    }
+    /* ceyiz paketleri subcategory in Cok satan subcategory */
+    #cok_satan_ceyiz_paketleri{
+        display: none;
+    }
+    #cok_satan_ceyiz_paketleri:target{
+        display: block;
+    }
+    /* kampanyalar subcategory in Cok satan subcategory */
+    #cok_satan_kampaniyalar{
+        display: none;
+    }
+    #cok_satan_kampaniyalar:target{
+        display: block;
+    }
+    /* internete ozel urunler subcategory in Cok satan subcategory */
+    #cok_satan_internete_ozel_urunler{
+        display: none;
+    }
+    #cok_satan_internete_ozel_urunler:target{
+        display: block;
+    }
+    /* Granit Tencereler subcategory in Cok satan subcategory */
+    #cok_satan_granit_tencereler{
+        display: none;
+    }
+    #cok_satan_granit_tencereler:target{
+        display: block;
+    }
+    /* Çelik Tencereler subcategory in Cok satan subcategory */
+    #cok_satan_celik_tencereler{
+        display: none;
+    }
+    #cok_satan_celik_tencereler:target{
+        display: block;
+    }
+    /* Bakır Mutfak Ürünleri subcategory in Cok satan subcategory */
+    #cok_satan_bakir_mutfak_urunler{
+        display: none;
+    }
+    #cok_satan_bakir_mutfak_urunler:target{
+        display: block;
+    }
+    /* _____________________ subcategory quick menu ___________________*/
+    .category_quick_menu{
+        width: 100%;
+        overflow-x: auto;
+        padding: 15px;
+        padding-left: 0px;
+    }
+    .category_quick_menu ul{
+        width: 100%;
+        max-width: 600px;
+        min-width: 590px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .category_quick_menu ul li a{
+        border: 1px solid #c6c6c6;
+        border-radius: 5px;
+        padding: 10px 15px;
+        font-size: 15px;
+        font-family: Roboto, helvetice, sans-serif;
+        user-select: none;
+        cursor: pointer;
+    }
+    .active_Button{
+        background-color: #383838;
+        color: #ffffff;
+    }
+    /* ______  subcategories quick menu of sofra subCategory ______________*/
+    .Sofra_Subcategories_quick_menu{
+        width: 100%;
+        overflow-x: auto;
+        padding: 15px;
+        padding-left: 0px;
+    }
+    .Sofra_Subcategories_quick_menu ul{
+        width: 100%;
+        min-width: 1450px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .Sofra_Subcategories_quick_menu ul li a{
+        width: 100%;
+        border: 1px solid #c6c6c6;
+        border-radius: 5px;
+        padding: 10px 15px;
+        font-size: 15px;
+        font-family: Roboto, helvetice, sans-serif;
+        user-select: none;
+        cursor: pointer;
+    }
+    /* ______  subcategories quick menu of Mutfak subCategory ______________*/
+    .Mutfak_Subcategories_quick_menu{
+        width: 100%;
+        overflow-x: auto;
+        padding: 15px;
+        padding-left: 0px;
+    }
+    .Mutfak_Subcategories_quick_menu ul{
+        width: 100%;
+        min-width: 1050px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .Mutfak_Subcategories_quick_menu ul li a{
+        width: 100%;
+        border: 1px solid #c6c6c6;
+        border-radius: 5px;
+        padding: 10px 15px;
+        font-size: 15px;
+        font-family: Roboto, helvetice, sans-serif;
+        user-select: none;
+        cursor: pointer;
+    }
+    /* ______  subcategories quick menu of kucuk ev aletleri subCategory ______________*/
+    .kucuk_ev_aletleri_Subcategories_quick_menu{
+        width: 100%;
+        overflow-x: auto;
+        padding: 15px;
+        padding-left: 0px;
+    }
+    .kucuk_ev_aletleri_Subcategories_quick_menu ul{
+        width: 100%;
+        min-width: 1150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .kucuk_ev_aletleri_Subcategories_quick_menu ul li a{
+        width: 100%;
+        border: 1px solid #c6c6c6;
+        border-radius: 5px;
+        padding: 10px 15px;
+        font-size: 15px;
+        font-family: Roboto, helvetice, sans-serif;
+        user-select: none;
+        cursor: pointer;
+    }
+        /* ______  subcategories quick menu of ev tekstili subCategory ______________*/
+        .ev_tekstili_Subcategories_quick_menu{
+            width: 100%;
+            overflow-x: auto;
+            padding: 15px;
+            padding-left: 0px;
+        }
+        .ev_tekstili_Subcategories_quick_menu ul{
+            width: 100%;
+            min-width: 687px;
+            max-width: 700px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .ev_tekstili_Subcategories_quick_menu ul li a{
+            width: 100%;
+            border: 1px solid #c6c6c6;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 15px;
+            font-family: Roboto, helvetice, sans-serif;
+            user-select: none;
+            cursor: pointer;
+        }
+        /* ______  subcategories quick menu of aksesuar subCategory ______________*/
+        .aksesuar_Subcategories_quick_menu{
+            width: 100%;
+            overflow-x: auto;
+            padding: 15px;
+            padding-left: 0px;
+        }
+        .aksesuar_Subcategories_quick_menu ul{
+            width: 320px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .aksesuar_Subcategories_quick_menu ul li a{
+            width: 100%;
+            border: 1px solid #c6c6c6;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 15px;
+            font-family: Roboto, helvetice, sans-serif;
+            user-select: none;
+            cursor: pointer;
+        }
+        /* ______  subcategory in Sadece Karaca.com-da subcategory ______________*/
+        .sadece_karacada_Subcategories_quick_menu{
+            width: 100%;
+            overflow-x: auto;
+            padding: 15px;
+            padding-left: 0px;
+        }
+        .sadece_karacada_Subcategories_quick_menu ul{
+            width: 100%;
+            max-width: 550px;
+            min-width: 534px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .sadece_karacada_Subcategories_quick_menu ul li a{
+            width: 100%;
+            border: 1px solid #c6c6c6;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 15px;
+            font-family: Roboto, helvetice, sans-serif;
+            user-select: none;
+            cursor: pointer;
+        }
+        /* ______ subcategories in Cok satan subcategory ______________*/
+        .cok_satan_Subcategories_quick_menu{
+            width: 100%;
+            overflow-x: auto;
+            padding: 15px;
+            padding-left: 0px;
+        }
+        .cok_satan_Subcategories_quick_menu ul{
+            width: 100%;
+            min-width: 1400px;
+            /* min-width: 534px; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .cok_satan_Subcategories_quick_menu ul li a{
+            width: 100%;
+            border: 1px solid #c6c6c6;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 15px;
+            font-family: Roboto, helvetice, sans-serif;
+            user-select: none;
+            cursor: pointer;
+        }
+    /* _________- subcategory head __________________ */
+    .subcategory_head_container{
+        width: 100%;
+        min-width: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 16px;
+        font-family: Roboto, helvetice, sans-serif;
+        padding: 15px 15px 15px 0;
+    }
+    .subcategory_head_container .subcategory_name{
+        font-weight: 500;
+        margin: auto;
+    }
+    /* ________ back button ________-*/
+    .subcategory_back_button{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+    }
+    .subcategory_back_button img{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    /* ________ subcategory list container _________________________*/
+    .subcategory_list_container{
+        width: 100%;
+    }
+    .subcategory_list_container ul{
+        width: 100%;
+    }
+    /* ___ subcategory link ______ */
+    .subcategory_list_container ul li a{
+        width: 99%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: center;
+        font-size: 16px;
+        font-family: Roboto, helvetice, sans-serif;
+        padding: 15px 0;
+    }
+    /* ___________ arrow right __________ */
+    .subcategory_list_container ul li a img{
+        width: 16px;
+        height: 16px;
+    }
+    /* ________ list border bottom _______*/
+    .subcategory_list_container ul li{        
+        border-bottom: 1px solid #f1f1f1;
+    }
+    .subcategory_list_container ul li:last-child{        
+        border-bottom: unset;
+    }
+}
+.drop_down_row_second{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jacques+Francois+Shadow&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --white-color: #fff;
+    --box-shadow-gray-color: rgb(0 0 0 / 8%);
+    --black-color: #000000;
+    --opacity-black: #383838b6;
+    --book-header-border-gray-color: #dee2e6;
+}
+/* ___________________ markalar page ______________________ */
+.markalar_page{
+    width: 98%;
+    max-width: 1440px;
+    margin: auto;
+    padding-top: 20px;
+}
+/* ___  page name ___________ */
+.markalar_page_name{
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+/* ______________ images container _____________ */
+.markalar_page_images_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-left: 15px;
+}
+/* image box */
+.markalar_page_brand_item{
+    width: 14%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+    border: 2px solid var(--white-color);
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 8%);
+}
+.markalar_page_brand_item:hover{
+    border: 2px solid var(--black-color);
+    transition: all 0.5s ease;
+}
+/* brand link */
+.markalar_page_brand_item a{
+    display: block;
+    width: 100%;
+    /* min-height: 222px; */
+    height: 15vw;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+/* brand image */
+.markalar_page_brand_item a .brandContent img{
+    width: 100%;
+}
+/* ___________ responsive _____________________ */
+@media (width <= 1023px){
+    .markalar_page{
+        margin-top: 100px;
+    }
+    .markalar_page_brand_item{
+        width: 23%;
+    }
+    .markalar_page_brand_item a{
+        height: 25vw;
+    }
+}
+@media (width <= 767px){
+    .markalar_page_brand_item{
+        width: 45%;
+        margin-right: 5%;
+    }
+    .markalar_page_brand_item a{
+        height: 50vw;
+    }
+}
+@media (width <= 450px){
+    .markalar_page{
+        width: 95%;
+    }
+    .markalar_page_images_container{
+        align-items: center;
+    }
+    .markalar_page_brand_item{
+        width: 80%;
+        margin-right: unset;
+        margin: 10px auto;
+    }
+    .markalar_page_brand_item a{
+        height: 85vw;
+    }
+}

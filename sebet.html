@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alışveriş Sepetim</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="styles/sebet.css">
+</head>
+<body>
+    <!-- ___________ sebet page header  ___________ -->
+    <header class="sebet_page_header">
+        <div class="sebet_page_header_container">
+            <a href="index.html" class="sebet_page_header_logo">
+                <img src="catalog/view/assets/images/logo.svg" alt="Karaca"> 
+            </a>
+            <div class="sebet_page_header_mobile_links">
+                <i class="fa-solid fa-angle-left sebet_page_header_mobile_back" onclick="history.back()"></i>
+                <div class="sebet_page_header_mobile_name">
+                    Sepetim
+                </div>
+                <div class="sebet_page_header_mobile_links_right">
+                    <a href="login.html">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                    <i class="fa-regular fa-trash-can"></i>
+                </div>
+            </div>
+            <div class="sebet_page_header_processes">
+                <div class="sebet_page_header_processes_item header_active_green_color">
+                    <a href="sebet.html" class="sebet_page_header_processes_item_image_name">
+                        <img class="sebet_page_sepetim_image" src="/catalog/view/assets/images/icons/shopping-cart.svg" alt="Sepet">
+                        <div class="sebet_page_header_processes_item_name">
+                            Sepetim
+                        </div>
+                    </a>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+                <div class="sebet_page_header_processes_item">
+                    <a href="#" class="sebet_page_header_processes_item_image_name">
+                        <i class="fa-regular fa-clipboard"></i>
+                        <div class="sebet_page_header_processes_item_name">
+                            Teslimat
+                        </div>
+                    </a>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+                <div class="sebet_page_header_processes_item">
+                    <a href="#" class="sebet_page_header_processes_item_image_name">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <div class="sebet_page_header_processes_item_name">
+                            Ödeme
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="sebet_page_header_right_links">
+                <a href="login.html" class="sebet_page_header_right_link_item">
+                    <i class="fa-regular fa-heart"></i>
+                    Favorilerim
+                </a>
+                <div class="sebet_page_header_right_link_item sebet_page_header_right_link_account">
+                    <i class="fa-regular fa-user"></i>
+                    <a href="login.html">Hesabım</a> 
+                    <div class="sebet_header_dropdown_menu">
+                        <i class="fa-solid fa-caret-up"></i>
+                        <div class="sebet_header_dropdown_menu_container">
+                            <ul>
+                                <li>
+                                    <a href="login.html">
+                                        <img src="/catalog/view/assets/images/icons/shopping-cart.svg" alt="Siparişlerim"> Siparişlerim
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login.html">
+                                        <img src="/catalog/view/assets/images/icons/location.svg" alt="Adreslerim"> Adreslerim
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login.html">
+                                        <img src="/catalog/view/assets/images/icons/heart.svg" alt="Favorilerim"> Favorilerim
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- _______ sebet page main __________________ -->
+    <div class="sebet_page_main_container">
+        <div class="sebet_page_product_and_price_container">
+            <!-- ___________ products table ____________-->
+            <div class="sebet_page_products_container">
+                <!-- ___________ products table header ____________-->
+                <div class="sebet_page_products_header">
+                    <div class="sebet_page_product_cart_and_amount">
+                        <div class="sebet_page_product_cart">
+                            Sepetim 
+                        </div>
+                        <div class="sebet_page_product_amount">
+                            (2 Ürün)
+                        </div>
+                    </div>
+                    <div class="sebet_page_products_header_remove_All_cart">
+                        <i class="fa-regular fa-trash-can"></i>
+                        Sepeti Boşalt
+                    </div>
+                    <div class="sebet_page_confirm_removing_All_cart_window">
+                        <div class="sebet_page_confirm_removing_All_cart_container">
+                            <div class="sebet_page_confirm_removing_All_cart_header">
+                                <div class="sebet_page_confirm_removing_All_cart_header_name">
+                                    Sepeti Boşalt
+                                </div>
+                                <i class="fa-regular fa-circle-xmark confirm_removing_All_cart_header_close_btn"></i>
+                            </div>
+                            <div class="sebet_page_confirm_removing_All_cart_body">
+                                <div class="sebet_page_confirm_removing_All_cart_icon">
+                                    <i class="fa-solid fa-info"></i>
+                                </div>
+                                <div class="sebet_page_confirm_removing_All_cart_text">
+                                    Bütün ürünleri sepetinizden silmek üzeresiniz...
+                                </div>
+                                <div class="sebet_page_confirm_removing_All_cart_buttons">
+                                    <div class="sebet_page_removing_All_cart_cancel_btn">
+                                        Vazgeç
+                                    </div>
+                                    <div class="sebet_page_removing_All_cart_confirm_btn">
+                                        Sepeti Boşalt
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--___________  Product table All details ____________ -->
+                <div class="sebet_page_product">
+                    <!-- Product image -->
+                    <div class="sebet_page_product_image">
+                        <a href="mehsul_ic.html">
+                            <img src="https://6rk3rbju.rocketcdn.com/rcman/cw80h80q90gm/image/cdndata/182/202110/600.15.01.2058/8699343475051-74.jpg" alt="product">
+                        </a>
+                        <div class="sebet_page_product_delete_from_cart">
+                            <i class="fa-regular fa-trash-can"></i>
+                            Sil
+                        </div>
+                    </div>
+                    <!-- Product name and id  -->
+                    <div class="sebet_page_product_details">
+                        <a href="mehsul_ic.html" class="sebet_page_product_name">
+                            Emsan Circle 2'li Kek Kalıbı Seti
+                        </a>
+                        <div class="sebet_page_product_number_id">
+                            600.15.01.2058
+                        </div>
+                        <div class="sebet_page_product_price_mobile">
+                            94,99 TL
+                        </div>
+                        <div class="sebet_page_product_free_shipping">
+                            <img src="catalog/view/assets/images/icons/shipping-car.svg" alt="Free shipping">
+                            Ücretsiz Kargo
+                        </div>
+                    </div>
+                    <!-- _______ table right side _________ -->
+                    <div class="sebet_page_product_right_side">
+                        <div class="sebet_page_product_number_change">
+                            <div class="sebet_page_product_number_decrease">
+                                <i class="fa-solid fa-minus"></i>
+                            </div>
+                            <div class="sebet_page_product_number_show">
+                                1
+                            </div>
+                            <div class="sebet_page_product_number_increase">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="sebet_page_product_price">
+                            94,99 TL
+                        </div>
+                        <div class="sebet_page_product_delete_from_cart">
+                            <i class="fa-regular fa-trash-can"></i>
+                            Sil
+                        </div>
+                    </div>
+                </div>
+                <div class="sebet_page_product">
+                    <!-- Product image -->
+                    <div class="sebet_page_product_image">
+                        <a href="mehsul_ic.html">
+                            <img src="https://6rk3rbju.rocketcdn.com/rcman/cw80h80q90gm/image/data/emsan/2016/153.05.01.8748.jpg" alt="product">
+                        </a>
+                        <div class="sebet_page_product_delete_from_cart">
+                            <i class="fa-regular fa-trash-can"></i>
+                            Sil
+                        </div>
+                    </div>
+                    <!-- Product name and id  -->
+                    <div class="sebet_page_product_details">
+                        <a href="mehsul_ic.html" class="sebet_page_product_name">                            
+                            Emsan Demre Paslanmaz Çelik Sos Tenceresi 14 cm ( Kapaksız )
+                        </a>
+                        <div class="sebet_page_product_number_id">
+                            153.05.01.8748
+                        </div>
+                        <div class="sebet_page_product_price_mobile">
+                            169,99 TL
+                        </div>
+                        <div class="sebet_page_product_free_shipping">
+                            <img src="catalog/view/assets/images/icons/shipping-car.svg" alt="Free shipping">
+                            Ücretsiz Kargo
+                        </div>
+                    </div>
+                    <!-- _______ table right side _________ -->
+                    <div class="sebet_page_product_right_side">
+                        <div class="sebet_page_product_number_change">
+                            <div class="sebet_page_product_number_decrease">
+                                <i class="fa-solid fa-minus"></i>
+                            </div>
+                            <div class="sebet_page_product_number_show">
+                                1
+                            </div>
+                            <div class="sebet_page_product_number_increase">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="sebet_page_product_price">
+                            169,99 TL
+                        </div>
+                        <div class="sebet_page_product_delete_from_cart">
+                            <i class="fa-regular fa-trash-can"></i>
+                            Sil
+                        </div>
+                    </div>
+                </div>
+                <!-- __________ continue to shop button _____________ -->
+                <a href="index.html" class="sebet_page_continue_to_shop">
+                    <i class="fa-solid fa-angle-left"></i>
+                    Alışverişe Devam Et
+                </a>
+                <!-- __________ slider cards _________________ -->
+                <div class="sebet_page_product_payment_slider">
+                    <div class="sebet_page_product_payment">
+                        <img src="https://6rk3rbju.rocketcdn.com/image/banner/bonus_kampanyalar/bonus-12aya-varan-sepet-1105.jpg" alt="payment">
+                    </div>
+                    <div class="sebet_page_product_payment">
+                        <img src="https://6rk3rbju.rocketcdn.com/image/banner/cookplus/sepet-sayfasi-masterpass.jpg" alt="payment">
+                    </div>
+                    <div class="sebet_page_product_payment">
+                        <img src="https://6rk3rbju.rocketcdn.com/image/banner/anneler_gunu/sepet-sayfasi-dijital-cuzdan.jpg" alt="payment">
+                    </div>
+                </div>
+            </div>
+            <!-- _______ sebet page payment container ________________ -->
+            <div class="sebet_page_payment_container">
+                <div class="sebet_page_payment_head">Sipariş Özeti</div>
+                <div class="sebet_page_payment_info">
+                    <!-- _______ sebet page prices ________________ -->
+                    <div class="sebet_page_payment_prices_container">
+                        <div class="sebet_page_payment_price">
+                            <div class="sebet_page_payment_price_type">Ara Toplam</div>
+                            <div class="sebet_page_payment_price_text">264,98 TL</div>
+                        </div>
+                        <div class="sebet_page_payment_price discount_color">
+                            <div class="sebet_page_payment_price_type">Ücretsiz Kargo</div>
+                            <div class="sebet_page_payment_price_text line_text">14.90 TL</div>
+                        </div>
+                        <div class="sebet_page_payment_price">
+                            <div class="sebet_page_payment_price_type">Toplam</div>
+                            <div class="sebet_page_payment_price_text">264,98 TL</div>
+                        </div>
+                        <div class="sebet_page_payment_prices_total">
+                            <div class="sebet_page_payment_prices_total_text">Toplam</div>
+                            <div class="sebet_page_payment_prices_total_price">264,98 TL</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sebet_page_payment_continue_btn">
+                    <div class="sebet_page_payment_mobile_prices">
+                        <i class="fa-solid fa-chevron-up sebet_page_payment_prices_show"></i>
+                        <div class="sebet_page_payment_mobile_price_name">
+                            Toplam
+                            <div class="sebet_page_payment_mobile_price_number">
+                                2.179,97 TL
+                            </div>
+                        </div>
+                    </div>
+                    <button class="sebet_page_payment_continue_class">Devam Et</button>
+                </div>
+                <div class="sebet_page_payment_warning">
+                    Bilgi: Size daha hızlı hizmet verebilmek adına ürünleriniz ayrı ayrı kargoya verilebilir
+                </div>
+                <div class="sebet_page_payment_mobile_coupon_open">
+                    Kupon Kodu Ekle
+                </div>
+                <!-- coupon add form -->
+                <form class="sebet_page_payment_coupon_container">
+                    <div class="sebet_page_payment_coupon_head">
+                        Kupon Kodu
+                    </div>
+                    <div class="sebet_page_payment_coupon_input_btn_container">
+                        <input type="text">
+                        <button class="sebet_page_payment_coupon_btn">
+                            Kullan
+                        </button>
+                    </div>
+                </form>
+                <div class="sebet_page_confirm_removing_All_cart_window">
+                    <div class="sebet_page_confirm_removing_All_cart_container">
+                        <div class="sebet_page_confirm_removing_All_cart_header">
+                            <div class="sebet_page_confirm_removing_All_cart_header_name">
+                                Kupon Kodu
+                            </div>
+                            <i class="fa-regular fa-circle-xmark confirm_removing_All_cart_header_close_btn"></i>
+                        </div>
+                        <div class="sebet_page_confirm_removing_All_cart_body">
+                            <div class="sebet_page_confirm_removing_All_cart_text">
+                                Sadece kayıtlı kullanıcılar kupon kodundan yararlanabilir.
+                            </div>
+                            <div class="sebet_page_confirm_removing_All_cart_buttons">
+                                <div class="sebet_page_removing_All_cart_cancel_btn sebet_page_confirm_coupon_close">
+                                    Kapat
+                                </div>
+                                <a href="login.html" class="sebet_page_removing_All_cart_confirm_btn sebet_page_confirm_coupon_log_in">
+                                    Üye Ol/Giriş Yap
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ___________ sebet page footer __________________ -->
+    <footer class="sebet_page_footer">
+        <div class="sebet_page_footer_copyright">Krc.com.tr © 2022 - Karaca Züccaciye A.Ş. Tüm hakları saklıdır.</div>
+        <div class="sebet_page_footer_banks">
+            <img src="catalog/view/assets/images/bank-logos.png" alt="banks">
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- ___________ sebet script ____________ -->
+    <script src="scripts/sebet.js"></script>
+</body>
+</html>
